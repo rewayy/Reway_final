@@ -17,7 +17,7 @@ export const OurJourney = () => {
                        <h1 className='text-black'>OUR JOURNEY,<br /> OUR INSPIRATION</h1>
                         <div className='w-[26vw] rounded-full border-2  border-green-300'></div>
                     </div>
-                    <p className='border w-[510px]  mt-4 leading-6 py-4 font-light'>
+                    <p className='  mt-4 leading-6 py-4 font-light'>
                         In a nation burdened by the mounting E-Waste crisis, a group of young and 
                         innovative tech visionaries embarked on a mission to revolutionise the eWaste landscape.
                     </p>
