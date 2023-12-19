@@ -8,7 +8,7 @@ export default function App() {
     <>
       <HeroPage/>
       <OurJourney/>
-      <SustainableGoals/>
+      {/* <SustainableGoals/> */}
     </>
   )
 }
