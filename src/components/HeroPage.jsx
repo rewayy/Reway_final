@@ -29,6 +29,7 @@ export const HeroPage = () => {
         src="https://images.pexels.com/photos/14593478/pexels-photo-14593478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="hero-img" />
 
+        {/* Headline content */}
         <div className=' w-full h-full  absolute -top-2 gap-4 text-white  flex flex-col  justify-center items-center  ' >
             <div>
                 <h1 className=' text-center'>Recycling Solving</h1>
@@ -37,14 +38,10 @@ export const HeroPage = () => {
             <p className='w-1/4  text-center  text-md leading-tight font-thin '>
                 A solution that caters all problems at a single  place at a single time
             </p>
+            {/* Button */}
             <button className='text-xs  font-thin border  border-white px-2 hover:bg-white/10 shadow-md  py-1 rounded-full' > Know more</button>
         </div>
 
-
-          
-        
-
-        
     </header>
   )
 }
