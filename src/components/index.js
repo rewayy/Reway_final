@@ -1,3 +1,5 @@
 import { HeroPage } from "./HeroPage";
+import { OurJourney } from "./OurJourney";
+import SustainableGoals from './SustainableGoals';
 
-export {HeroPage}
+export {HeroPage, OurJourney, SustainableGoals }
