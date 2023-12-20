@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
                     
                     {/* Button */}
-                    <button className='rounded-full px-4 text-[#087D39] text-sm shadow-md hover:scale-105 duration-150 font-semibold py-2  tracking-wider bg-white'>
+                    <button className='hidden lg:flex rounded-full px-4 text-[#087D39] text-sm shadow-md hover:scale-105 duration-150 font-semibold py-2  tracking-wider bg-white'>
                         E-marketplace
                     </button>
 

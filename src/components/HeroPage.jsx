@@ -14,7 +14,7 @@ return (
         
 
         {/* Header-content component */}
-        <div className='w-full h-full border bg-yellow-400 absolute  border-black'>
+        <div className='w-full h-full  '>
             <HeroContent/>
         </div>
 
