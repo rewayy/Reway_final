@@ -12,7 +12,7 @@ const HeroContent = () => {
         alt="hero-img" />
 
         {/* Headline content */}
-        <div className=' w-full h-full  absolute -top-2 gap-4 text-white  flex flex-col  justify-center items-center  ' >
+        <div className=' w-full h-full  absolute -top-2 gap-8 text-white  flex flex-col  justify-center items-center  ' >
             <div>
                 <h1 className=' text-center'>Recycling Solving</h1>
                 <h1 className=' text-center mt-1'>Renewable Energy</h1>
@@ -21,7 +21,7 @@ const HeroContent = () => {
                 A solution that caters all problems at a single  place at a single time
             </p>
             {/* Button */}
-            <button className='text-xs  font-thin border  border-white px-2 hover:bg-white/10 shadow-md  py-1 rounded-full' > Know more</button>
+            <button className='text-xs   border font-mont border-white px-2    shadow-md  py-1 rounded-full' > Know more</button>
         </div>
     </div>
   )
