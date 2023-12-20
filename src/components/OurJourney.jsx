@@ -82,10 +82,7 @@ export const OurJourney = () => {
                     <div className='w-full flex items-center px-16 py-4 text-sm leading-6'>
                     With this mission to catalyse the journey of buildinga circular economy “Reway” was born.
                     </div>
-
                 </div>
-
-
 
             </div>
         </div>
