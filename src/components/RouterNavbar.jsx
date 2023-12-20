@@ -46,11 +46,11 @@ const Navbar = () => {
                     </div> */}
 
                     <div className='flex items-center font-mont  '>
-                        <ul  className='hidden  lg:flex px-2 ml-8 text-md cursor-pointer justify-between gap-10 items-center '>
-                            <Link to={'/'}> Home  </Link>
-                            <li> About</li>
-                            <li> Contact</li>
-                            <li> Blogs</li>
+                        <ul  className='hidden  lg:flex px-2 ml-8  hover:text-green-800 text-md cursor-pointer justify-between gap-10 items-center '>
+                            <Link to={'/'} className=' hover:underline underline-offset-8  px-2 '> Home  </Link>
+                            <li className=' hover:underline underline-offset-8  px-2 '> About</li>
+                            <li className=' hover:underline underline-offset-8  px-2 '> Contact</li>
+                            <li className=' hover:underline underline-offset-8  px-2 '> Blogs</li>
                         </ul>
                     </div>
 

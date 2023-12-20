@@ -29,14 +29,14 @@ const Navbar = () => {
 
                     {/* Nav-links */}
                     <div className='flex items-center  '>
-                        <ul  className='hidden  lg:flex px-2 ml-8 text-md cursor-pointer justify-between gap-10 items-center '>
+                        <ul  className='hidden  lg:flex px-2 ml-8 text-md text-white cursor-pointer justify-between gap-10 items-center '>
                         {links.map(({id,link}) =>(
                             <>
-                                <li className=' px-2' key={id}>{link}  </li>
+                                <li className=' hover:underline underline-offset-8  px-2 ' key={id}>{link}  </li>
                             </>
                         ))}
                         {/* to react-router to work */}
-                        <Link className='px-2' to={'/blogs'}> Blogs  </Link>
+                        <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
                         </ul>
                     </div>
                     
