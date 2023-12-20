@@ -1,6 +1,6 @@
 import { HeroPage } from "./HeroPage";
 import { OurJourney } from "./OurJourney";
-import SustainableGoals from './SustainableGoals';
 import { Thumbnail } from './Thumbnail';
+import FCards from './Card/FCards';
 
-export {HeroPage, OurJourney, SustainableGoals ,Thumbnail}
+export {HeroPage, OurJourney , FCards, Thumbnail}

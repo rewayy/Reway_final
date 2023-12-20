@@ -3,12 +3,12 @@ import { wasteImage } from '../assets'
 
 export const OurJourney = () => {
   return (
-    <div className='w-full h-full pb-20 border  border-black '>
+    <div className='w-full h-full pb-20  pt-10'>
         <div className='max-w-[1206px] m-auto  h-full flex flex-col items-center justify-between' >
 
-            <div className='w-full h-full grid grid-cols-2 mb-12 pt-10  text-center'>
+            <div className='w-full h-full grid grid-cols-2 mb-12   text-center'>
                 {/* col-1 */}
-                <div className='border w-full '>
+                <div className='w-full '>
                     <img src={wasteImage} alt="" />
                 </div>
                 {/* col-2 */}
