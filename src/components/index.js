@@ -4,5 +4,7 @@ import { Thumbnail } from './Thumbnail';
 import FCards from './Card/FCards';
 import HeroContent from "./HeroContent";
 import Navbar from "./Navbar";
+import RouterNav from './RouterNavbar';
+import AllSection from "./AllSection";
 
-export {HeroPage, OurJourney , FCards, HeroContent,Navbar, Thumbnail}
+export {HeroPage, OurJourney ,RouterNav, FCards, HeroContent,Navbar, Thumbnail,AllSection}
