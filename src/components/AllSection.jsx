@@ -3,6 +3,7 @@ import { HeroPage } from './HeroPage'
 import { OurJourney } from './OurJourney'
 import FCards from './Card/FCards';
 import { Thumbnail } from './Thumbnail'
+import Timeline from '../pages/Timeline/timelinepage';
 
 const AllSection = () => {
   return (
@@ -12,6 +13,7 @@ const AllSection = () => {
         <FCards/>
         <Thumbnail/> 
         {/* Rest of the components will get added here */}
+        <Timeline/>
 
         
     </div>

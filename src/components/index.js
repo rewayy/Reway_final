@@ -7,4 +7,5 @@ import Navbar from "./Navbar";
 import RouterNav from './RouterNavbar';
 import AllSection from "./AllSection";
 
+
 export {HeroPage, OurJourney ,RouterNav, FCards, HeroContent,Navbar, Thumbnail,AllSection}

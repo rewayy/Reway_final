@@ -15,7 +15,7 @@ export const OurJourney = () => {
                 <div className=' flex flex-col justify-center  items-center'>
                     <div>
                        <h1 className='text-black'>OUR JOURNEY,<br /> OUR INSPIRATION</h1>
-                        <div className='w-[26vw] rounded-full border-2  border-green-300'></div>
+                        <div className='w-[26vw] rounded-full border-2 mt-1 border-green-300'></div>
                     </div>
                     <p className='  mt-4 leading-6 py-4 font-light'>
                         In a nation burdened by the mounting E-Waste crisis, a group of young and 
