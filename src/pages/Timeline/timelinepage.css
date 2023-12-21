@@ -34,13 +34,13 @@
 .vertical-timeline.vertical-timeline--animate.vertical-timeline--two-columns::before{
   background: linear-gradient( rgb(176, 255, 156), rgb(4, 165, 90));
 
-  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+  /* .vertical-timeline--two-columns .vertical-timeline-element-icon {
     width: 60px;
     height: 60px;
     left: 50%;
     top: 22%;
     margin-left: -30px;
-}
+} */
 }
 
 

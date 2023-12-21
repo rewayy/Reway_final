@@ -59,8 +59,8 @@ export const OurJourney = () => {
                         </div>
                     </div>
                     <div className='w-full px-8 text-center md:text-left md:px-16 md:py-4 pb-4  text-xs md:text-sm leading-4 md:leading-6'>
-                    Our primary educational hub was the heart of Landfills and Waste Generating entities. 
-                    With an unwavering commitment to digitising and bridging the divides amongstakeholders, our dedicated team refined their expertise and transformed their dreams into reality.
+                    Being undergrads we knew nothing about the E-Waste Landscape of the country.Our odyssey journey with an intensive,
+                    year long field investigation, which wefondly refer to as our 'Expedition in E-Waste Management.'
                     </div>
                 </div>
                 {/* Row-2 */}
@@ -89,8 +89,7 @@ export const OurJourney = () => {
                         </div>
                     </div>
                     <div className='w-full px-8 text-center md:text-left md:px-16 md:py-4 pb-4  text-xs md:text-sm leading-4 md:leading-6'>
-                    Our primary educational hub was the heart of Landfills and Waste Generating entities. 
-                    With an unwavering commitment to digitising and bridging the divides amongstakeholders, our dedicated team refined their expertise and transformed their dreams into reality.
+                    With this mission to catalyse the journey of buildinga circular economy “Reway” was born.
                     </div>
                 </div>
 
