@@ -16,7 +16,7 @@ h2,h1{
 
 @layer base{
   h1{
-    @apply text-3xl text-white tracking-wide uppercase font-bold
+    @apply text-xl md:text-3xl text-white tracking-wide uppercase font-bold
   }
   /* h2{
     @apply  text-black tracking-wide font-thin

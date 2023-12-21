@@ -7,7 +7,7 @@ import Timeline from '../pages/Timeline/timelinepage';
 
 const AllSection = () => {
   return (
-    <div>
+    <div className='min-w-[375px]'>
         <HeroPage/>
         <OurJourney/>
         <FCards/>

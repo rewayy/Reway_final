@@ -1,6 +1,7 @@
 import React from 'react'
 import { logo } from '../assets'
 import { Link } from 'react-router-dom'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
     const links=[
@@ -24,7 +25,7 @@ const Navbar = () => {
 
                     {/* Background-image */}
                     <Link to={'/'}>
-                    <img className='brightness-100' src={logo} alt="" />
+                    <img className='brightness-100 ml-2 md:ml-0' src={logo} alt="" />
                     </Link>
 
                     {/* Nav-links */}
@@ -40,6 +41,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     
+                    <div className=' p-2'>
+                    <GiHamburgerMenu size={28}  />
+                    </div>
+
                     {/* Button */}
                     <button className='hidden lg:flex rounded-full px-4 text-[#087D39] text-sm shadow-md hover:drop-shadow-lg font-semibold py-2   hover:bg-white bg-white/90 '>
                         E-marketplace
