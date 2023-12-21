@@ -41,7 +41,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     
-                    <div className=' p-2'>
+                    <div className=' md:hidden p-2'>
                     <GiHamburgerMenu size={28}  />
                     </div>
 
