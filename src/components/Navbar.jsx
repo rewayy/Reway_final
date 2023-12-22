@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { logo } from '../assets'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
+import { func } from 'prop-types';
 
 const Navbar = () => {
+    const[nav, setNav] = useState(false);
+
     const links=[
         {
             id:1,
@@ -21,7 +25,7 @@ const Navbar = () => {
     ]
 
   return (
-            <div className='max-w-[1183px] m-auto font-mont  text-white   h-full flex items-center justify-between'>
+            <div className='max-w-[1183px] relative m-auto font-mont  text-white   h-full flex items-center justify-between'>
 
                     {/* Background-image */}
                     <Link to={'/'}>
@@ -41,11 +45,35 @@ const Navbar = () => {
                         </ul>
                     </div>
                     
-                    <div className=' md:hidden p-2'>
-                    <GiHamburgerMenu size={28}  />
+                
+
+                    <div className='lg:hidden mr-6 ' onClick={()=> setNav(!nav)}>
+                        {nav?   
+                                <> 
+                                    <div className='mr-6'>
+                                        <ImCross className='absolute z-10 top-6'  />
+                                    </div>
+                                  
+                                </> 
+                            :<GiHamburgerMenu size={30} opacity={.9}/> 
+                        }
                     </div>
 
-                    {/* Button */}
+                    {nav && ( 
+                                  <div className='border absolute top-0 left-0 w-full h-screen p-4  bg-green-700 border-white'>
+                                  <Link className=' p-1 ml-1 absolute top-0 left-0' to={'/'}>
+                                          <img  src={logo}  />
+                                  </Link>
+
+                                  <ul className=' text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center'>
+                                      <Link to={'/'} className='hover:bg-white/50 hover:underline hover:underline-offset-8 capitalize py-3 rounded-lg w-full '>HOME</Link>
+                                          <li className=' hover:underline hover:underline-offset-8 py-3 rounded-lg  w-full '>ABOUT</li>
+                                          <li className=' py-3 hover:underline hover:underline-offset-8 rounded-lg  w-full '>CONTACT</li>
+                                      <Link to={'/blogs'} className=' py-3 hover:underline hover:underline-offset-8  rounded-lg  w-full '>BLOGS</Link>
+                                  </ul>
+                          </div> 
+                    )}
+ 
                     <button className='hidden lg:flex rounded-full px-4 text-[#087D39] text-sm shadow-md hover:drop-shadow-lg font-semibold py-2   hover:bg-white bg-white/90 '>
                         E-marketplace
                     </button>
