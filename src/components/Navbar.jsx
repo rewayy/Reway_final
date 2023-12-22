@@ -37,7 +37,9 @@ const Navbar = () => {
                         <ul  className='hidden  lg:flex px-2 ml-8 text-md text-white cursor-pointer justify-between gap-10 items-center '>
                         {links.map(({id,link}) =>(
                             <>
-                                <li className=' hover:underline underline-offset-8  px-2 ' key={id}>{link}  </li>
+                                <li className=' hover:underline underline-offset-8 cursor-pointer  px-2 ' key={id}>
+                                                                {link}                      
+                                </li>
                             </>
                         ))}
                         {/* to react-router to work */}

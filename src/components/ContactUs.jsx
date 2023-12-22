@@ -40,7 +40,7 @@ export const ContactUS = () => {
   };
 
   return (
-    <div className="text-center p-8">
+    <div className="text-center p-8 " >
       <h1 className="text-4xl text-black p-4">CONTACT US</h1>
       <div className="border-b-2 border-teal-400 rounded-full mx-auto w-60 mt-2"></div>
       <p className="font-s text-center my-5 text-2xl font-thin">
