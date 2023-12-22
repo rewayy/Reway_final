@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
             <div className='max-w-[1183px] relative m-auto font-mont  text-white   h-full flex items-center justify-between'>
 
-                    {/* Background-image */}
+                    {/* Background-logo */}
                     <Link to={'/'}>
                     <img className='brightness-100 ml-2 md:ml-0' src={logo} alt="" />
                     </Link>
