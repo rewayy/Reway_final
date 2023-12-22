@@ -20,7 +20,7 @@ class FCards extends Component{
                                 <span className=' text-black font-mont mb-8  '> Making a difference, together.</span>
                             </div>
 
-                    <div className="sdg-row p-2 mt-0 md:mt-8 ">
+                    <div className="sdg-row grid px-20    sm:px-20 sm:grid-cols-2  md:grid-cols-3 md:px-4 lg:px-0 lg:grid-cols-4 p-2 mt-0 md:mt-8 ">
                         <div className="col-md-3   ">
                                 <Cards  cardId="1 " imgsrc={E_PRINT_12} title="Responsible Consumption And Production"
                                 para="Ensure sustainable consumption and production patterns." />
