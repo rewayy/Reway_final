@@ -8,20 +8,23 @@ import { ContactUS } from './ContactUs';
 import { Testimonial } from './Testimonial';
 import { Footer } from './Footer';
 import  AppPage  from './AppDownload/AppPage';
+import Timeline from '../pages/Timeline/timelinepage';
 
 const AllSection = () => {
   return (
-    <div>
+    <div className='min-w-[375px]'>
         <HeroPage/>
         <OurJourney/>
         <FCards/>
         <Thumbnail/> 
         <Map/>
         <Testimonial/>
+        <Timeline/>
         <ContactUS/>
         <AppPage/>
         <Footer/>
         {/* Rest of the components will get added here */}
+        
 
         
     </div>

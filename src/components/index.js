@@ -10,3 +10,5 @@ import { Map } from "./Map";
 import AppPage from './AppDownload/AppPage.jsx';
 
 export {HeroPage, OurJourney ,RouterNav, FCards, HeroContent,Navbar, Thumbnail,AllSection,Map, AppPage,}
+
+
