@@ -8,7 +8,7 @@ import { ContactUS } from './ContactUs';
 import { Testimonial } from './Testimonial';
 import { Footer } from './Footer';
 import  AppPage  from './AppDownload/AppPage';
-import Timeline from '../pages/Timeline/timelinepage';
+import Timeline from './Timeline/timelinepage';
 
 const AllSection = () => {
   return (
