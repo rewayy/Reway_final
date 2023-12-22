@@ -20,6 +20,13 @@ const settings = {
         slidesToScroll: 1,
       },
     },
+    {
+      breakpoint:1200,
+      settings:{
+        slidesToShow:2,
+        slidesToScroll:1,
+      }
+    }
   ],
 };
 

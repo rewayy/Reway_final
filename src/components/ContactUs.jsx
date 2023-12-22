@@ -49,14 +49,14 @@ export const ContactUS = () => {
 
       <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg" ref={form}>
         <div className="flex flex-col items-center">
-          <input
-            type="text"
-            name="from_name"
-            value={formData.from_name}
-            onChange={handleInputChange}
-            placeholder="Name"
-            className="form__input p-2 w-[550px] mb-2 bg-[#3F704D] text-white"
-          />
+        <input
+  type="text"
+  name="from_name"
+  value={formData.from_name}
+  onChange={handleInputChange}
+  placeholder="Name"
+  className="form__input p-2 md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
+/>
 
           <input
             type="email"
@@ -64,7 +64,7 @@ export const ContactUS = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Email"
-            className="form__input p-2 w-[550px] mb-2 bg-[#3F704D] text-white"
+            className="form__input p-2 md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
           />
 
           <input
@@ -73,30 +73,30 @@ export const ContactUS = () => {
             value={formData.phno}
             onChange={handleInputChange}
             placeholder="Phone"
-            className="form__input p-2 w-[550px] mb-2 bg-[#3F704D] text-white"
+            className="form__input p-2 md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
           />
 
-          <select
-            required
-            name="state"
-            value={formData.state}
-            onChange={handleInputChange}
-            className="form__input p-2 mb-2 w-[550px] bg-[#3F704D] text-white"
-          >
-            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option>
-            {/* Add other state options as needed */}
-          </select>
+<select
+  required
+  name="state"
+  value={formData.state}
+  onChange={handleInputChange}
+  className="form__input p-2 mb-2 md:w-[550px] mx-auto bg-[#3F704D] text-white"
+>
+  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  {/* Add other state options as needed */}
+</select>
 
           <textarea
             name="message"
             value={formData.message}
             onChange={handleInputChange}
             placeholder="Message"
-            className="form__input bg-[#3F704D] p-2 w-[550px] h-[170px] mb-2 text-white"
+            className="form__input bg-[#3F704D] p-2 md:w-[550px] h-[170px] mb-2 text-white"
           ></textarea>
 
-          <button type="submit" className="form__submit-btn  w-[550px] text-white p-2 bg-[#3F704D]">
+          <button type="submit" className="form__submit-btn  md:w-[550px] text-white p-2 bg-[#3F704D]">
             Submit
           </button>
         </div>

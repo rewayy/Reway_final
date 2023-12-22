@@ -7,6 +7,7 @@ import { Map } from './Map';
 import { ContactUS } from './ContactUs';
 import { Testimonial } from './Testimonial';
 import { Footer } from './Footer';
+import  AppPage  from './AppDownload/AppPage';
 
 const AllSection = () => {
   return (
@@ -18,6 +19,7 @@ const AllSection = () => {
         <Map/>
         <Testimonial/>
         <ContactUS/>
+        <AppPage/>
         <Footer/>
         {/* Rest of the components will get added here */}
 
