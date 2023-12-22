@@ -62,17 +62,17 @@ const Navbar = () => {
                     </div>
 
                     {nav && ( 
-                                  <div className='border absolute top-0 left-0 w-full h-screen p-4  bg-green-700 border-white'>
-                                  <Link className=' p-1 ml-1 absolute top-0 left-0' to={'/'}>
-                                          <img  src={logo}  />
-                                  </Link>
+                            <div className='md:hidden border absolute transition-all ease-in-out duration-200 top-0 left-0 w-full h-screen p-4   bg-gradient-to-b from-green-600 to-green-800 border-white'>
+                                <Link className=' p-1 ml-1 absolute top-0 left-0' to={'/'}>
+                                        <img  src={logo}  />
+                                </Link>
 
-                                  <ul className=' text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center'>
-                                      <Link to={'/'} className='hover:bg-white/50 hover:underline hover:underline-offset-8 capitalize py-3 rounded-lg w-full '>HOME</Link>
-                                          <li className=' hover:underline hover:underline-offset-8 py-3 rounded-lg  w-full '>ABOUT</li>
-                                          <li className=' py-3 hover:underline hover:underline-offset-8 rounded-lg  w-full '>CONTACT</li>
-                                      <Link to={'/blogs'} className=' py-3 hover:underline hover:underline-offset-8  rounded-lg  w-full '>BLOGS</Link>
-                                  </ul>
+                                <ul  className="text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center " >
+                                    <li  onClick={()=> setNav(!nav)} className='py-3  w-full '>HOME</li>
+                                        <li  onClick={()=> setNav(!nav)} className='  py-3 w-full '>ABOUT</li>
+                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>CONTACT</li>
+                                    <Link to={'/blogs'} className=' py-3 w-full '>BLOGS</Link>
+                                </ul>
                           </div> 
                     )}
  
