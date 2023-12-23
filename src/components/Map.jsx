@@ -5,7 +5,7 @@ export const Map = () => {
   return (
     <div className='flex flex-col md:flex-row mx-12'>
       <div className="w-full md:w-1/2 my-16 md:mx-8">
-        <img className="w-full h-full object-cover" src={india} alt="" />
+        <img className="w-full h-auto object-cover" src={india} alt="" />
       </div>
       <div className="w-full md:w-1/2 dark:shadow-lg md:mx-20 my-20">
         <div className='mx-4 md:mx-20'>
