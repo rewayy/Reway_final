@@ -8,7 +8,8 @@ import { ContactUS } from './ContactUs';
 import { Testimonial } from './Testimonial';
 import { Footer } from './Footer';
 import  AppPage  from './AppDownload/AppPage';
-import Timeline from './Timeline/timelinepage';
+import Timeline from './Timeline/Timelinepage.jsx';
+
 
 const AllSection = () => {
   return (
@@ -19,7 +20,7 @@ const AllSection = () => {
         <Thumbnail/> 
         <Map/>
         <Testimonial/>
-        <Timeline/>
+        <Timeline />
         <ContactUS/>
         <AppPage/>
         <Footer/>

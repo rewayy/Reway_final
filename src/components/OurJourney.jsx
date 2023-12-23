@@ -3,7 +3,7 @@ import { wasteImage } from '../assets'
 
 export const OurJourney = () => {
   return (
-    <div className='w-full h-full md:pb-20  md:pt-10 '>
+    <div  id='about' className='w-full h-full md:pb-20  md:pt-10 '>
         <div className='max-w-[1206px] m-auto  h-full flex flex-col items-center justify-between' >
 
             <div className='w-full h-full md:grid grid-cols-2  md:mb-12 mb-10   text-center'>

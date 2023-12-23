@@ -1,8 +1,9 @@
-import { useState } from 'react';
-import Blog from './pages/Blog';
-import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react'
+import Blog from './pages/Blog'
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
-import { AllSection, HeroPage } from './components';
+import AllSection from './components/AllSection';
+import Services from './pages/Services';
 
 import One1 from './pages/1';
 import One2 from './pages/2';
@@ -23,11 +24,12 @@ import One15 from './pages/15';
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route index element={<AllSection />} />
-        <Route path="/" element={<Layout />}>
-          <Route path="/blogs" element={<Blog />} />
-          <Route path="/One1" element={<One1 />} />
+    <Routes>
+      <Route index element={<AllSection />} />
+      <Route path="/" element={<Layout />}>
+        <Route path="/blogs" element={<Blog/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/One1" element={<One1 />} />
           <Route path="/One2" element={<One2 />} />
           <Route path="/One3" element={<One3 />} />
           <Route path="/One4" element={<One4 />} />
@@ -42,8 +44,9 @@ export default function App() {
           <Route path="/One13" element={<One13 />} />
           <Route path="/One14" element={<One14 />} />
           <Route path="/One15" element={<One15 />} />
-        </Route>
-      </Routes>
+      </Route>
+    </Routes>
+    
     </>
   );
 }

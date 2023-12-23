@@ -8,21 +8,22 @@ import { func } from 'prop-types';
 const Navbar = () => {
     const[nav, setNav] = useState(false);
 
-    const links=[
+    const links = [
         {
-            id:1,
-            link:'About'
+            id: 1,
+            link: 'About',
+            
         },
         {
-            id:2,
-            link:'Contact'
+            id: 2,
+            link: 'Contact',
         },
-        {
-            id:3,
-            link:'Blogs'
-        },
-       
-    ]
+        // {
+        //   id: 3,
+        //   link: 'Blogs',
+          
+        // },
+      ];
 
   return (
             <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont border shadow-md md:shadow-sm border-slate-300 mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
@@ -43,10 +44,12 @@ const Navbar = () => {
                         {links.map(({id,link}) =>(
                             <>
                                 <li className=' hover:underline underline-offset-8 cursor-pointer  px-2 ' key={id}>
-                                                                {link}                      
+                                                     <Link to={'/'}> {link}</Link>                             
                                 </li>
                             </>
                         ))}
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/services'}> Services  </Link>
                         </ul>
                     </div>
                     
@@ -71,10 +74,13 @@ const Navbar = () => {
                                 </Link>
 
                                 <ul  className="text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center " >
-                                    <Link to={'/'}  onClick={()=> setNav(!nav)} className='py-3  w-full '>HOME</Link>
-                                        <li  onClick={()=> setNav(!nav)} className='  py-3 w-full '>ABOUT</li>
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>CONTACT</li>
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>BLOGS</li>
+                                    {links.map(({ id, link }) => (
+                                        <Link to={'/'} className='py-3  w-full'>
+                                            {link}
+                                        </Link>
+                                    ))}
+                                        <Link to={'/blogs'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</Link>
+                                        <Link to={'/services'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Services</Link>
                                 </ul>
                           </div> 
                     )}
