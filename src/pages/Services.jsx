@@ -1,5 +1,4 @@
 import React from 'react'
-import onlinemarket from '../assets/onlinemarket.png'
 import ServicesList from './ServiceList'
 
 const Services = () => {
