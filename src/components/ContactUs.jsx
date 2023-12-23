@@ -48,7 +48,7 @@ export const ContactUS = () => {
       </p>
 
       <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg" ref={form}>
-        <div className="flex flex-col items-center bg-green-50 ">
+        <div className="flex flex-col items-center  ">
         <input
   type="text"
   name="from_name"

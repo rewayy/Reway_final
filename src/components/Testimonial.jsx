@@ -61,38 +61,32 @@ export const Testimonial = () => {
         At Reway, we're your eco-friendly choice for e-waste recycling—seamless, sustainable, and making a positive impact on the environment!
       </p>
       <div className='px-12 py-12'>
-        <Slider {...settings}>
-          {data.map((testimonial, index) => (
-            <div key={index} className='bg-white max-w-sm w-full mx-4 min-h-[250px] max-h-[250px]  flex-shrink-0 rounded p-6 my-8'>
-              <p className='font-thin text-xl italic px-2'>{testimonial.review}</p>
-              
-              {/* Outside the flex-row div */}
-              <div className='flex  min-w-[150px] min-h-[0px]'>
-                {/* Left half for the circular image with a thin black border */}
-                
+      <Slider {...settings}>
+      {data.map((testimonial, index) => (
+        <div key={index} className='bg-white max-w-sm w-full mx-4 h-[300px] flex-shrink-0 rounded p-6 my-8'>
+          <div className='h-[125px]'>
+            <p className='font-thin text-xl italic px-2'>{testimonial.review}</p>
+          </div>
 
-                {/* Right half for the name */}
-                <div className='relative w-1/2'>
-  <div className='absolute bottom-0 left-0 text-left pl-4'>
-    <p className='font-bold text-xl min-h-[50px]'>{testimonial.name}</p>
-  </div>
-</div>
-
-                <div className='w-1/2 '>
-                <div className='relative bg-green-50 rounded-full border top-3 left-14 border-black w-[100px] h-[100px]'>
-  <img
-    src={testimonial.img}
-    alt={`Testimonial ${index}`}
-    className='absolute  rounded-full w-full h-full object-cover'
-  />
-</div>
-
- 
-                </div>
+          <div className='flex min-w-[150px] h-[125px]'>
+            <div className='relative w-1/2 flex items-center justify-center'>
+              <div className='absolute bottom-0 left-0 text-left pl-4'>
+                <p className='font-bold text-xl min-h-[50px]'>{testimonial.name}</p>
               </div>
             </div>
-          ))}
-        </Slider>
+            <div className='w-1/2 flex items-center justify-center '>
+              <div className='relative bg-green-50 rounded-full border border-black w-[100px] h-[100px]'>
+                <img
+                  src={testimonial.img}
+                  alt={`Testimonial ${index}`}
+                  className='absolute rounded-full w-full h-full object-cover'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </Slider>
       </div>
     </div>
   );
