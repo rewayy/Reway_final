@@ -22,7 +22,7 @@ const HeroContent = () => {
                 A solution that caters all problems at a single  place at a single time
             </p>
             {/* Button */}
-            <Link to={'/services'} className='text-xs   border font-mont border-white px-2  shadow-md  py-1 rounded-full cursor-pointer' > our services</Link>
+            <Link to={'/services'} className='text-xs   border font-mont border-white px-2   shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
         </div>
     </div>
   )
