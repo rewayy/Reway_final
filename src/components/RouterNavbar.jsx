@@ -8,21 +8,22 @@ import { func } from 'prop-types';
 const Navbar = () => {
     const[nav, setNav] = useState(false);
 
-    const links=[
+    const links = [
         {
-            id:1,
-            link:'About'
+          id: 1,
+          link: 'Home',
+          
         },
         {
-            id:2,
-            link:'Contact'
+          id: 2,
+          link: 'About',
+         
         },
         {
-            id:3,
-            link:'Blogs'
+          id: 3,
+          link: 'Contact',
         },
-       
-    ]
+      ];
 
   return (
             <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont border shadow-md md:shadow-sm border-slate-300 mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
@@ -71,10 +72,12 @@ const Navbar = () => {
                                 </Link>
 
                                 <ul  className="text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center " >
-                                    <Link to={'/'}  onClick={()=> setNav(!nav)} className='py-3  w-full '>HOME</Link>
-                                        <li  onClick={()=> setNav(!nav)} className='  py-3 w-full '>ABOUT</li>
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>CONTACT</li>
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>BLOGS</li>
+                                    {links.map(({ id, link }) => (
+                                        <Link to={'/'} className='py-3  w-full'>
+                                            {link}
+                                        </Link>
+                                    ))}
+                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</li>
                                 </ul>
                           </div> 
                     )}

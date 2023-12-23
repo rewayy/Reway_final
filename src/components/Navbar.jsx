@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { logo } from '../assets'
 import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { func } from 'prop-types';
@@ -8,21 +9,23 @@ import { func } from 'prop-types';
 const Navbar = () => {
     const[nav, setNav] = useState(false);
 
-    const links=[
+    const links = [
         {
-            id:1,
-            link:'Home'
+          id: 1,
+          link: 'Home',
+          to: 'home', 
         },
         {
-            id:2,
-            link:'About'
+          id: 2,
+          link: 'About',
+          to: 'about',
         },
         {
-            id:3,
-            link:'Contact'
+          id: 3,
+          link: 'Contact',
+          to: 'contact',
         },
-       
-    ]
+      ];
 
   return (
             <div className='max-w-[1183px] relative m-auto font-mont  text-white   h-full flex items-center justify-between'>
@@ -33,17 +36,19 @@ const Navbar = () => {
                     </Link>
 
                     {/* Nav-links */}
-                    <div className='flex items-center  '>
-                        <ul  className='hidden  lg:flex px-2 ml-8 text-md text-white cursor-pointer justify-between gap-10 items-center '>
-                        {links.map(({id,link}) =>(
-                            <>
-                                <li className=' hover:underline underline-offset-8 cursor-pointer  px-2 ' key={id}>
-                                                                {link}                      
-                                </li>
-                            </>
-                        ))}
-                        {/* to react-router to work */}
-                        <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
+                    <div className='flex items-center'>
+                        <ul className='hidden lg:flex px-2 ml-8 text-md text-white cursor-pointer justify-between gap-10 items-center'>
+                                {links.map(({ id, link, to }) => (
+                                    <li className='hover:underline underline-offset-8 cursor-pointer px-2' key={id}>
+                                    <ScrollLink to={to} smooth={true} duration={600}>
+                                        {link}
+                                    </ScrollLink>
+                                    </li>
+                                ))}
+                                {/* to react-router to work */}
+                                <Link className='px-2 hover:underline underline-offset-8' to='/blogs' smooth>
+                                    Blogs
+                                </Link>
                         </ul>
                     </div>
                     
@@ -68,10 +73,12 @@ const Navbar = () => {
                                 </Link>
 
                                 <ul  className="text-2xl font-bold w-fullrounded-lg h-full gap-2 flex flex-col justify-center items-center text-center " >
-                                    <li  onClick={()=> setNav(!nav)} className='py-3  w-full '>HOME</li>
-                                        <li  onClick={()=> setNav(!nav)} className='  py-3 w-full '>ABOUT</li>
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>CONTACT</li>
-                                    <Link to={'/blogs'} className=' py-3 w-full '>BLOGS</Link>
+                                {links.map(({ id, link, to }) => (
+                                    <ScrollLink onClick={()=> setNav(!nav)} className='py-3  w-full' to={to} smooth={true} duration={600}>
+                                        {link}
+                                    </ScrollLink>
+                                ))}
+                                    <Link to={'/blogs'} className=' py-3 w-full '>Blogs</Link>
                                 </ul>
                           </div> 
                     )}
