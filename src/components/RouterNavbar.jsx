@@ -44,7 +44,7 @@ const Navbar = () => {
                         {links.map(({id,link}) =>(
                             <>
                                 <li className=' hover:underline underline-offset-8 cursor-pointer  px-2 ' key={id}>
-                                                                {link}                      
+                                                     <Link to={'/'}> {link}</Link>                             
                                 </li>
                             </>
                         ))}
