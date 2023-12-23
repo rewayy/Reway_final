@@ -25,6 +25,8 @@ const Navbar = () => {
           link: 'Contact',
           to: 'contact',
         },
+          
+        
       ];
 
   return (
@@ -45,10 +47,13 @@ const Navbar = () => {
                                     </ScrollLink>
                                     </li>
                                 ))}
-                                {/* to react-router to work */}
                                 <Link className='px-2 hover:underline underline-offset-8' to='/blogs' smooth>
                                     Blogs
                                 </Link>
+                                <Link className='px-2 hover:underline underline-offset-8' to='/services' smooth>
+                                    Our Services
+                                </Link>
+                               
                         </ul>
                     </div>
                     
@@ -79,6 +84,7 @@ const Navbar = () => {
                                     </ScrollLink>
                                 ))}
                                     <Link to={'/blogs'} className=' py-3 w-full '>Blogs</Link>
+                                    <Link to={'/services'} className=' py-3 w-full '>Services</Link>
                                 </ul>
                           </div> 
                     )}

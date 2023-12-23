@@ -10,19 +10,19 @@ const Navbar = () => {
 
     const links = [
         {
-          id: 1,
-          link: 'Home',
+            id: 1,
+            link: 'About',
+            
+        },
+        {
+            id: 2,
+            link: 'Contact',
+        },
+        // {
+        //   id: 3,
+        //   link: 'Blogs',
           
-        },
-        {
-          id: 2,
-          link: 'About',
-         
-        },
-        {
-          id: 3,
-          link: 'Contact',
-        },
+        // },
       ];
 
   return (
@@ -48,6 +48,8 @@ const Navbar = () => {
                                 </li>
                             </>
                         ))}
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/services'}> Services  </Link>
                         </ul>
                     </div>
                     
@@ -77,7 +79,8 @@ const Navbar = () => {
                                             {link}
                                         </Link>
                                     ))}
-                                        <li onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</li>
+                                        <Link to={'/blogs'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</Link>
+                                        <Link to={'/services'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Services</Link>
                                 </ul>
                           </div> 
                     )}
