@@ -7,7 +7,7 @@ class FCards extends Component{
     render() {
         return (
             
-            <div  className='w-full h-full bg-[#108540] bg-opacity-25 md:pb-14 relative  card-container'>
+            <div id='sustainable goals'  className='w-full h-full bg-[#108540] bg-opacity-25 md:pb-14 relative  card-container'>
             <div className='max-w-[1206px] m-auto  h-full flex flex-col items-center justify-between'>
 
                 <div className=' absolute -top-[15px] w-full  flex justify-center items-center  '>

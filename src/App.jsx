@@ -20,6 +20,7 @@ import One12 from './pages/12';
 import One13 from './pages/13';
 import One14 from './pages/14';
 import One15 from './pages/15';
+import MarketPlace from './pages/MarketPlace';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/blogs" element={<Blog/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/marketPlace" element={<MarketPlace/>} />
         <Route path="/One1" element={<One1 />} />
           <Route path="/One2" element={<One2 />} />
           <Route path="/One3" element={<One3 />} />
