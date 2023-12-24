@@ -27,8 +27,8 @@ export const Footer = () => {
                 </div>
                 <div className='md:w-1/4 text-center md:text-start grid cursor-pointer  md:mx-20  text-sm md:text-[22px] leading-7 font-normal opacity-90 md:opacity-100 md:font-normal md:tracking-wide   grid-cols-2 mb-4 gap-2 md:mb-0  '>
                   <ul className='flex flex-col'>
-                    <ScrollLink to='hero' smooth={true} duration={600} className='hover:underline'>Home</ScrollLink>
-                    <ScrollLink to='about' smooth={true} duration={600} className='hover:underline'>About</ScrollLink>
+                    <ScrollLink to='hero' smooth={true} duration={900} className='hover:underline'>Home</ScrollLink>
+                    <ScrollLink to='about' smooth={true} duration={900} className='hover:underline'>About</ScrollLink>
                     <ScrollLink to='contact' smooth={true} duration={600} className='hover:underline'>Contact</ScrollLink>
                     <Link to='/blogs' className='hover:underline'>Blogs</Link>
                     <Link to='/services' className='hover:underline'>Services</Link>
@@ -37,7 +37,7 @@ export const Footer = () => {
                   <ul className='w-3/2 md:w-full flex flex-col '>
                   <ScrollLink to='testimonials' smooth={true} duration={600} offset={-80} className='hover:underline'>Testimonials</ScrollLink>
                   <ScrollLink to='timeline' smooth={true} duration={600} offset={-80} className='hover:underline'>Our Journey</ScrollLink>
-                  <ScrollLink to='sustainable goals' smooth={true} duration={600} offset={-80} className='hover:underline'>Sustainable goals</ScrollLink> 
+                  <ScrollLink to='sustainable goals' smooth={true} duration={800} offset={-80} className='hover:underline'>Sustainable goals</ScrollLink> 
                     <Link to={'/marketPlace'} className='md:inline-block   bg-white/70 md:bg-white/90 hover:bg-white text-green-700 text-xs md:text-sm my-1 rounded-sm px-2 md:px-4 font-normal hover:underline hover:underline-offset-4  py-2'>E-marketplace</Link>
                   </ul>
                 </div>
