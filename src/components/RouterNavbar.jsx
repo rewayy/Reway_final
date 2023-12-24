@@ -85,9 +85,9 @@ const Navbar = () => {
                           </div> 
                     )}
  
-                    <button className='hidden lg:flex rounded-full px-4 text-[#087D39] text-sm shadow-md hover:drop-shadow-lg font-semibold py-2   hover:bg-white bg-white/90 '>
+                    <Link to={'/marketPlace'} className='hidden lg:flex rounded-full px-4 text-[#087D39] text-sm shadow-md hover:drop-shadow-lg font-semibold py-2   hover:bg-white bg-white/90 '>
                         E-marketplace
-                    </button>
+                    </Link>
 
                 </div>
 )}

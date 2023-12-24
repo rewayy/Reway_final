@@ -38,7 +38,7 @@ export const Footer = () => {
                   <ScrollLink to='testimonials' smooth={true} duration={600} offset={-80} className='hover:underline'>Testimonials</ScrollLink>
                   <ScrollLink to='timeline' smooth={true} duration={600} offset={-80} className='hover:underline'>Our Journey</ScrollLink>
                   <ScrollLink to='sustainable goals' smooth={true} duration={600} offset={-80} className='hover:underline'>Sustainable goals</ScrollLink> 
-                    <button className='md:inline-block   bg-white/70 md:bg-white/90 hover:bg-white text-green-700 text-xs md:text-sm my-1 rounded-sm px-2 md:px-4 font-normal hover:underline hover:underline-offset-4  py-2'>E-marketplace</button>
+                    <Link to={'/marketPlace'} className='md:inline-block   bg-white/70 md:bg-white/90 hover:bg-white text-green-700 text-xs md:text-sm my-1 rounded-sm px-2 md:px-4 font-normal hover:underline hover:underline-offset-4  py-2'>E-marketplace</Link>
                   </ul>
                 </div>
                 
