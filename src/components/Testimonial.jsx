@@ -56,10 +56,12 @@ const data = [
 export const Testimonial = () => {
   return (
     <div id="testimonials" className='bg-green-700 min-h-[650px]'>
-      <h1 className='mx-auto text-center py-8'>TESTIMONIALS</h1>
-      <p className='mx-auto text-center text-white text-2xl px-4'>
+      <div className="md:flex flex-col justify-center items-center">
+      <h1 className='mx-auto text-center text-2xl md:text-4xl py-8'>TESTIMONIALS</h1>
+      <p className='md:w-1/2 text-center text-sm md:tracking-wider md:text-lg font-light px-6   text-white  md:px-6'>
         At Reway, we're your eco-friendly choice for e-waste recycling—seamless, sustainable, and making a positive impact on the environment!
       </p>
+      </div>
       <div className='px-12 py-12'>
       <Slider {...settings}>
       {data.map((testimonial, index) => (
