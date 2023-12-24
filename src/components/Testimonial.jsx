@@ -55,7 +55,7 @@ const data = [
 
 export const Testimonial = () => {
   return (
-    <div className='bg-green-700 min-h-[650px]'>
+    <div className='bg-green-700 min-h-[650px] id="testomonials"'>
       <h1 className='mx-auto text-center py-8'>TESTIMONIALS</h1>
       <p className='mx-auto text-center text-white text-2xl px-4'>
         At Reway, we're your eco-friendly choice for e-waste recycling—seamless, sustainable, and making a positive impact on the environment!
