@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Typewriter } from 'react-simple-typewriter'
 
 const HeroContent = () => {
+
   return (
     <div>
         {/* overlay */}
@@ -18,11 +20,36 @@ const HeroContent = () => {
                 <h1 className='text-center text-3xl md:text-7xl  '>Reway</h1>
                 <h3 className='text-center text-3xl md:text-4xl mt-1'>Building a Circular Economy</h3>
             </div>
-            <p className='w-full px-8 md:px-0  text-xs  md:w-[55vw]  text-center tracking-wider md:normal  md:text-lg  md:leading-tight  font-thin md:font-light '>
-                Get quotations from multiple recyclers on one platform! <br />
-                We are committed to leading the world towards a cleaner and sustainable future. <br />
-                We believe in the Indian philosophy of One Earth. One Family. One Future
-            </p>
+
+          {/* type-writer effect */}
+          <h1 style={{ padding: '0 1rem', margin: '1', fontWeight: 'normal', backgroundColor:'blueviolet' }}>
+        {' '}
+        <span style={{ color: 'white',fontSize: '22px' }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words ={[
+              'Get quotations from multiple recyclers on one platform!',
+              'We are committed to leading the world towards a cleaner and sustainable future. ',
+              ' We believe in the Indian philosophy of One Earth. One Family. One Future'
+              
+            ]}
+            loop={100}
+            cursor
+            cursorStyle='|'
+            typeSpeed={80}
+            deleteSpeed={40}
+            delaySpeed={1000}
+          
+          />
+        </span>
+      </h1>
+          
+            
+
+
+
+
+
             {/* Button */}
             <Link to={'/services'} className='text-xs   border font-mont border-white px-2 hover:bg-white/20   shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
         </div>
@@ -31,3 +58,6 @@ const HeroContent = () => {
 }
 
 export default HeroContent
+
+
+
