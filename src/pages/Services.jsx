@@ -18,9 +18,9 @@ const Services = () => {
                     <div  className='cursor-pointer'>
                         <div className=' w-full h-full grid gap-4  md:gap-8 p-4 grid-co1s-1  cursor-pointer overflow-hidden md:grid-cols-2 '>
                         {ServicesList.map(({id,heading, logo, description})=>(
-                            <div className=' md:text-start text-center  md:flex  gap-2 justify-center    rounded-md bg-green-200 bg-opacity-45   shadow-md'>
-                                <div className='hidden  w-1/5 text-center md:flex flex-row items-center justify-center'>
-                                <img src={logo} alt={heading} className='w-full h-auto' /> {/* Use the imported logo */}
+                            <div className=' md:text-start text-center  md:flex  gap-2 justify-center border border-green-200 shadow-sm  md:border-none  rounded-md bg-green-200 bg-opacity-45  md:shadow-md'>
+                                <div className='  md:w-1/ text-center flex flex-row items-center justify-center'>
+                                <img src={logo} alt={heading} className='md:w-full  w-[60vw] h-[22vh] md:h-[16vh]   m-2 ' />
                                     
                                 </div>
                                 <div className='w-full  md:w-2/3 flex justify-center font-semibold text-lg  items-center'>
