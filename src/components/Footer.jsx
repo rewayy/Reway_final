@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className=' min-w-[375px] md:h-[180px] shadow-lg   '>
         <div className=' flex flex-col md:flex-row bg-[#008037] text-white md:py-12 md:gap-0 gap-4 py-1  justify-center px-4 md:px-[40px] '>
                 <div className='md:w-1/4 text-center mb-4 mt-16 md:mt-0 md:mb-0  md:relative'>
-                    <img src={logo2} alt='logo2' className=' -mt-12 md:-mt-20' />
+                    <img src={logo2} alt='logo2' className='    -mt-20' />
                  
                   <div className='flex justify-center  md:absolute  md:top-16 md:left-[18vh]  '>
                     <a href="your_call_link" className='px-1'  target="_blank" rel="noopener noreferrer">
