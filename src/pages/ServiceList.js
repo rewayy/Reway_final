@@ -19,7 +19,7 @@ const ServicesList = [
     },
     {
         id :4,
-        logo: 'logo',
+        // logo: 'logo',
         heading: 'Awareness Programmes',
         description: "Ignite your brand's visibility with targeted Awareness Programs, leaving a lasting impact through strategic marketing and outreach." 
     },

@@ -15,8 +15,9 @@ import rewayphonelogo from '../assets/Screenshot_2023-11-06-15-08-52-689_com.and
 import gmail from './gmail.png';
 import facebook from './facebook.png';
 import  call from './CALL.png';
+import marketplace from './marketplace.svg'
 
 
 
 //exporting images
-export {logo,wasteImage, youtube, E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};
+export {logo,wasteImage, youtube,marketplace, E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};
