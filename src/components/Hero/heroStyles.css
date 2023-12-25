@@ -1,0 +1,19 @@
+/* Add a class to target the Typewriter component */
+#typewriter {
+    padding: 0;
+    margin: 0;
+    padding: 0 1px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+  }
+  
+  /* Apply different styles for mobile devices using media queries */
+  @media (max-width: 768px) {
+    #typewriter {
+       
+      font-size: 13px; /* Adjust the font size as needed for mobile devices */
+    }
+  }
+  

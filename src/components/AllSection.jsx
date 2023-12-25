@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeroPage } from './HeroPage'
+import { HeroPage } from './Hero/HeroPage.jsx'
 import { OurJourney } from './OurJourney'
 import FCards from './Card/FCards';
 import { Thumbnail } from './Thumbnail'
