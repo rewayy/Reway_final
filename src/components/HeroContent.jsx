@@ -5,7 +5,7 @@ const HeroContent = () => {
   return (
     <div>
         {/* overlay */}
-        <div className='bg-[#087D39]/90 top-0 left-0 w-full h-screen absolute z-0 ' />
+        <div className='bg-[#008037] bg-gradient-to-b from-[#008037]  bg-opacity-90 top-0 left-0 w-full h-screen absolute z-0 ' />
 
         {/* Hero-image */}
         <img className='w-full h-screen left-0 top-0 object-cover  position-bottom  ' 

@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     
       <div className=' min-w-[375px] md:h-[180px] shadow-lg '>
-        <div className=' flex flex-col md:flex-row bg-green-700 text-white md:py-12 gap-4 py-1  justify-center px-4 md:px-[40px] '>
+        <div className=' flex flex-col md:flex-row bg-[#008037] text-white md:py-12 gap-4 py-1  justify-center px-4 md:px-[40px] '>
                 <div className='md:w-1/4 text-center mb-4 md:mb-0 '>
                   <div className='flex items-center justify-center '>
                     <img src={logo} alt='logo' className='w-12 h-12' />
