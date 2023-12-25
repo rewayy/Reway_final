@@ -19,8 +19,8 @@ const HeroContent = () => {
         {/* Headline content */}
         <div className=' w-full h-full  absolute -top-8 mt-4 md:mt-2 md:gap-4 gap-6 text-white  flex flex-col  justify-center items-center  ' >
             <div className='md:flex flex-col justify-center items-center'  >
-                <h1 className='text-center text-4xl md:text-7xl font-semibold tracking-tight md:tracking-wide md:font-bold  '>Reway</h1>
-                <h3 className='text-center text-lg md:text-4xl  font-semibold opacity-95 mt-1 tracking-tighter font-mont md:tracking-tight'>Building a Circular Economy</h3>
+                <h1 className='text-center text-4xl md:text-7xl font-semibold md:font-extrabold tracking-tight md:tracking-normal  '>Reway</h1>
+                <h3 className='text-center text-lg md:text-5xl  font-semibold opacity-95 mt-1 tracking-tighter font-mont '>Building a Circular Economy</h3>
             </div>
 
           {/* type-writer effect */}
