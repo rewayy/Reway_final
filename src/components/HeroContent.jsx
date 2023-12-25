@@ -22,7 +22,7 @@ const HeroContent = () => {
                 Get quotations from multiple recyclers on one platform!
             </p>
             {/* Button */}
-            <Link to={'/services'} className='text-xs   border font-mont border-white px-2   shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
+            <Link to={'/services'} className='text-xs   border font-mont border-white px-2 hover:bg-white/20   shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
         </div>
     </div>
   )
