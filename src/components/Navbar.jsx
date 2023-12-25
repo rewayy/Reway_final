@@ -20,11 +20,11 @@ const Navbar = () => {
           link: 'About',
           to: 'about',
         },
-        {
-          id: 3,
-          link: 'Contact',
-          to: 'contact',
-        },
+        // {
+        //   id: 3,
+        //   link: 'Contact',
+        //   to: 'contact',
+        // },
           
         
       ];
@@ -47,12 +47,19 @@ const Navbar = () => {
                                     </ScrollLink>
                                     </li>
                                 ))}
-                                <Link className='px-2 hover:underline underline-offset-8' to='/blogs' smooth>
-                                    Blogs
-                                </Link>
                                 <Link className='px-2 hover:underline underline-offset-8' to='/services' smooth>
                                     Our Services
                                 </Link>
+                                <Link className='px-2 hover:underline underline-offset-8' to='/blogs' smooth>
+                                    Blogs
+                                </Link>
+                                <li className='hover:underline underline-offset-8 cursor-pointer px-2' >
+                                    <ScrollLink to='contact' smooth={true} duration={600}>
+                                       Contact
+                                    </ScrollLink>
+                                    </li>
+                                
+
                                
                         </ul>
                     </div>
@@ -83,8 +90,8 @@ const Navbar = () => {
                                         {link}
                                     </ScrollLink>
                                 ))}
-                                    <Link to={'/blogs'} className=' py-3 w-full '>Blogs</Link>
                                     <Link to={'/services'} className=' py-3 w-full '>Services</Link>
+                                    <Link to={'/blogs'} className=' py-3 w-full '>Blogs</Link>
                                 </ul>
                           </div> 
                     )}

@@ -29,9 +29,9 @@ export const Footer = () => {
                   <ul className='flex flex-col'>
                     <ScrollLink to='hero' smooth={true} duration={900} className='hover:underline'>Home</ScrollLink>
                     <ScrollLink to='about' smooth={true} duration={900} className='hover:underline'>About</ScrollLink>
-                    <ScrollLink to='contact' smooth={true} duration={600} className='hover:underline'>Contact</ScrollLink>
-                    <Link to='/blogs' className='hover:underline'>Blogs</Link>
                     <Link to='/services' className='hover:underline'>Services</Link>
+                    <Link to='/blogs' className='hover:underline'>Blogs</Link>
+                    <ScrollLink to='contact' smooth={true} duration={600} className='hover:underline'>Contact</ScrollLink>
                   </ul>
 
                   <ul className='w-3/2 md:w-full flex flex-col '>
