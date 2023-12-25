@@ -7,6 +7,7 @@ export const ContactUS = () => {
     from_name: '',
     email: '',
     phno: '',
+    purpose: '',
     state: 'Andaman and Nicobar Islands',
     message: '',
   });
@@ -30,6 +31,7 @@ export const ContactUS = () => {
           from_name: '',
           email: '',
           phno: '',
+          purpose: '',
           state: 'Andaman and Nicobar Islands',
           message: '',
         });
@@ -40,23 +42,23 @@ export const ContactUS = () => {
   };
 
   return (
-    <div id='contact' className="text-center p-8 " >
+    <div id='contact' className="text-center p-8 md:p-6  " >
       <h1 className="text-4xl text-black p-4">CONTACT US</h1>
       <div className="border-b-2 border-teal-400 rounded-full mx-auto w-60 mt-2"></div>
       <p className="font-s text-center my-5 text-2xl font-thin">
         Send us the message and get all your queries answered
       </p>
 
-      <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg" ref={form}>
-        <div className="flex flex-col items-center  ">
+      <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg  " ref={form}>
+        <div className="flex flex-col items-center   md:py-12 md:bg-green-200 md:bg-opacity-90  md:shadow-lg md:rounded-lg md:mx-[50vh] ">
         <input
-  type="text"
-  name="from_name"
-  value={formData.from_name}
-  onChange={handleInputChange}
-  placeholder="Name"
-  className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
-/>
+            type="text"
+            name="from_name"
+            value={formData.from_name}
+            onChange={handleInputChange}
+            placeholder="Name"
+            className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
+          />
 
           <input
             type="email"
@@ -75,6 +77,19 @@ export const ContactUS = () => {
             placeholder="Phone"
             className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
           />
+
+    <select
+      required
+      name="purpose"
+      value={formData.purpose}
+      onChange={handleInputChange}
+      className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white">
+        <option value="EPR Assistance">EPR Assistance</option>
+        <option value="AI Chatbot Waitlist">AI Chatbot Waitlist</option>
+        <option value="Sell E-Waste">Sell E-Waste</option>
+        <option value="Buy E-Waste(only for govt authorized Recyclers)">Buy E-Waste(only for govt authorized Recyclers)</option>
+        <option value="others">others</option>
+    </select>
 
 <select
   required
@@ -119,6 +134,7 @@ export const ContactUS = () => {
 <option value="Uttarakhand">Uttarakhand</option>
 <option value="West Bengal">West Bengal</option>
 </select>
+
 
           <textarea
             name="message"
