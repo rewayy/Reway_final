@@ -24,7 +24,7 @@ const AppPage = () => {
   <br/> App, Now!
 </h2>
          <p className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl font-thin py-4 sm:py-6 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-xl">
-  Experience convenience at your fingertips! Elevate your shopping journey with the Reway app—download now for seamless browsing, exclusive deals, and a personalized shopping experience that fits your lifestyle.
+  Experience convenience at your fingertips! Elevate your E-Waste disposal journey with the Reway app—download now for seamless browsing, exclusive deals, and a personalized selling & buying experience that fits your style.
 </p>
 
           <div className="flex " >
