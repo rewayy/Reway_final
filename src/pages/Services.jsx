@@ -20,7 +20,7 @@ const Services = () => {
                         {ServicesList.map(({id,heading, logo, description})=>(
                             <div className=' md:text-start text-center  md:flex  gap-2 justify-center    rounded-md bg-green-200 bg-opacity-45   shadow-md'>
                                 <div className='hidden  w-1/5 text-center md:flex flex-row items-center justify-center'>
-                                    {logo } 
+                                <img src={logo} alt={heading} className='w-full h-auto' /> {/* Use the imported logo */}
                                     
                                 </div>
                                 <div className='w-full  md:w-2/3 flex justify-center font-semibold text-lg  items-center'>
