@@ -16,7 +16,7 @@ class FCards extends Component{
 
                 <div className="container-fluid flex flex-col pt-8">
                             <div className="flex justify-center items-center flex-col  ">
-                                <h1 className='text-black mb-4'> Sustainable Goals</h1>
+                                <h1 className='text-black mb-4 px-8 text-center'> Sustainable Development Goals</h1>
                                 <span className=' text-black font-mont mb-8  '> Making a difference, together.</span>
                             </div>
 

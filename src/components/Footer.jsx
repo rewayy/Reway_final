@@ -13,7 +13,7 @@ export const Footer = () => {
                     <img src={logo} alt='logo' className='w-12 h-12' />
                     <h1 className='text-white text-start md:ml-2'>REWAY</h1>
                   </div>
-                  <div className='flex justify-center mt-2'>
+                  <div className='flex justify-center   mt-2'>
                     <a href="your_call_link" className='px-1'  target="_blank" rel="noopener noreferrer">
                       <img src={call} alt='call' className='w-6 h-6' />
                     </a>
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </a>
                   </div>
                 </div>
-                <div className='md:w-1/4 text-center md:text-start grid cursor-pointer  md:mx-20  text-sm md:text-[22px] leading-7 font-normal opacity-90 md:opacity-100 md:font-normal md:tracking-wide   grid-cols-2 mb-4 gap-2 md:mb-0  '>
+                <div className='md:w-1/4 text-center md:text-start grid cursor-pointer  md:mx-20  text-sm  leading-7 font-normal opacity-90 md:opacity-100 md:font-normal md:tracking-wide   grid-cols-2 mb-4 gap-2 md:mb-0  '>
                   <ul className='flex flex-col'>
                     <ScrollLink to='hero' smooth={true} duration={900} className='hover:underline'>Home</ScrollLink>
                     <ScrollLink to='about' smooth={true} duration={900} className='hover:underline'>About</ScrollLink>
