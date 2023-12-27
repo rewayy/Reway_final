@@ -3,7 +3,7 @@ import ServicesList from './ServiceList'
 
 const Services = () => {
   return (
-    <div id='blogs' className='w-full h-screen min-w-[375px] md:mb-[15vh] mb-6 relative -z-40 '>
+    <div  className='w-full h-screen min-w-[375px] md:mb-[15vh] mb-6 relative -z-40 '>
         <div className='max-w-[1183px] lg:m-auto mx-2 py-6 md:mx-4   mb-8  rounded-md text-black  h-full flex items-center justify-center'>
             <div className='w-full h-full flex flex-col  items-center '>
 
