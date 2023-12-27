@@ -1,13 +1,41 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { green_earth } from '../assets';
 
 const MarketPlace = () => {
   return (
-    <div id='marketPlace' className='w-full h-full m min-w-[375px] -z-10 mb-6 relative'>
-        <div className='max-w-[1183px] md:m-auto mx-3  bg-slate-200 hover:drop-shadow-lg my-6 rounded-md text-black  h-[70vh] flex items-center justify-center'>
-                <p className='md:text-lg sm:text-md text-xs font-mont text-center text-slate-700'>Coming Soon...</p>
-        </div>
-    </div>
-  )
-}
+    <div id='marketPlace' className='w-full h-full min-w-[375px] -z-10 mb-6 relative'>
+      <div className='max-w-[1183px] md:m-auto mx-3 bg-[#b4de8e] hover:drop-shadow-lg my-6 rounded-md text-black h-[70vh] flex items-center justify-center'>
+        <div className='flex w-full justify-center'>
+          <div className='justify-center  scale-15 hidden md:block'>
+            <img className='' src={green_earth} alt='earth' />
+          </div>
 
-export default MarketPlace
+          <div className='w-1/2 justify-center my-auto'>
+            <h1 className='text-5xl md:text-5xl sm:text-4xl text-center text-green-800'>
+              Make Recycling Fun with Reway!
+            </h1>
+            <div className='flex justify-center my-12'>
+              {/* Replace links with React Router Links */}
+              <Link
+  to='/recyclers'  // Change to lowercase
+  className='text-white bg-green-700 mx-auto rounded-3xl text-xl py-1 px-9 block md:inline-block md:mx-2 cursor-pointer hover:cursor-pointer'
+>
+  RECYCLERS
+</Link>
+<Link
+  to='/sellers'  // Change to lowercase
+  className='text-white bg-green-700 mx-auto rounded-3xl text-xl py-1 px-9 block md:inline-block md:mx-2 cursor-pointer hover:cursor-pointer'
+>
+  SELLERS
+</Link>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MarketPlace;
