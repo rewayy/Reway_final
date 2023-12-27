@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { func } from 'prop-types';
+import {logo3} from '../assets';
 
 const Navbar = () => {
     const[nav, setNav] = useState(false);
@@ -26,14 +27,19 @@ const Navbar = () => {
       ];
 
   return (
-            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont border shadow-md md:shadow-sm border-slate-300 mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
+            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont  mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
 
                     {/* Background-logo */}
-                    <div >
-                        <Link to={'/'}>
-                        <img className='rounded-lg brightness-100  md:ml-0' src={logo} alt="" />
-                        </Link>
-                    </div>
+                    <div className='border h-max-[25px] w-auto  p-12'>
+  <Link to={'/'}>
+    <img
+      className='rounded-lg brightness-100 h-[10px] w-auto  md:ml-0'
+      src={logo3}
+      alt=""
+      style={{ transform: 'scale(10)' }} // Adjust the scale factor as needed
+    />
+  </Link>
+</div>
 
                     {/* Nav-links */}
                     <div className='flex items-center  '>
