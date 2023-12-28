@@ -14,9 +14,7 @@ const Recyclers = () => {
                         {/* Recycler's details */}
                         <div className='flex flex-col justify-center items-center gap-4 w-full border bg-green-200 px-4 rounded-md py-6 my-2'>
                             <p className='w-full h-8 bg-white  border rounded-md shadow-md text-sm p-1 text-slate-500'>Recycler 1 quote</p>
-                            <p className='w-full h-8 bg-white  border rounded-md shadow-md text-sm p-1 text-slate-500'>Recycler 2 quote</p>
-                            <p className='w-full h-8 bg-white  border rounded-md shadow-md text-sm p-1 text-slate-500'>Recycler 3 quote</p>
-                            <p className='w-full h-8 bg-white  border rounded-md shadow-md text-sm p-1 text-slate-500'>Recycler 4 quote</p>
+                         
                         </div>
 
                         <Link to={'/recycler-form'} className='bg-green-600 flex  justify-center items-center gap-2 font-mont hover:bg-green-700  px-4 py-2 rounded-full text-white text-sm'>  <IoAdd size={25} /> Add Recycler</Link>
