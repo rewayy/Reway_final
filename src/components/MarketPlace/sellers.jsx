@@ -1,170 +1,106 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FiFile } from 'react-icons/fi';
 
 const Sellers = () => {
-  // State for form fields
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    companyName: '',
-    address: '',
-    city: '',
-    region: '',
-    zipCode: '',
-    country: '',
-    contactNumber: '',
-    email: '',
-    gstNumber: '',
-  });
-
-  // Handle form input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
   return (
-    <div className='h-[700px] w-[500px] mx-auto px-4 py-6 rounded-md'>
-      <div className='py-[30px]'>
-        <h1 className="text-green-800 text-center">RECYCLER INFORMATION</h1>
+    <div className='w-full min-w-[375px] md:mb-[15vh] mb-6 relative'>
+      <div className='max-w-[1183px] lg:m-auto mx-2 md:mx-4 py-8 rounded-md text-black flex justify-center'>
+        <div className='w-full md:w-[500px] mx-auto px-4 py-6 rounded-md bg-white'>
+          <div className='py-3'>
+            <h1 className='text-green-800 text-center text-2xl font-bold'>RECYCLER INFORMATION</h1>
+          </div>
+
+          <form>
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Name</h2>
+              <div className='flex space-x-4'>
+                <input className='bg-gray-200 p-2 rounded w-1/2' placeholder='First' />
+                <input className='bg-gray-200 p-2 rounded w-1/2' placeholder='Last' />
+              </div>
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Company Name</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' />
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Address</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' placeholder='Street address' />
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <input placeholder='City' className='bg-gray-200 p-2 my-3 rounded w-[225px]' />
+              </div>
+              <div>
+                <input placeholder='Region' className='bg-gray-200 p-2 my-3 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <input placeholder='Zip code ' className='bg-gray-200 p-2 my-3 rounded w-[225px]' />
+              </div>
+              <div>
+                <input placeholder='Country' className='bg-gray-200 my-3 p-2 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <h2 className='text-green-800 font-bold text-xl'>Contact Number</h2>
+                <input className='bg-gray-200 p-2 rounded w-[225px]' />
+              </div>
+              <div>
+                <h2 className='text-green-800 font-bold text-xl'>E-Mail</h2>
+                <input className='bg-gray-200 p-2 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Gst Number</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' type='text' />
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Product Details</h2>
+              <div className='border-dotted h-[25px]'></div>
+            </div>
+
+            <div>
+              <label className='flex flex-col items-center bg-gray-200 p-2 rounded w-full border-dotted border-black'>
+                <FiFile className='text-4xl mb-2' /> {/* File icon */}
+                <span>Upload PDF</span>
+                <input type='file' className='hidden' />
+              </label>
+            </div>
+
+            <div>
+              <h2 className='text-green-800 text-xl font-bold text-xl'>Product Image</h2>
+              <div className='border-dotted h-[25px]'></div>
+            </div>
+
+            <div>
+              <label className='flex flex-col items-center bg-gray-200 p-2 rounded w-full border-dotted border-black'>
+                <FiFile className='text-4xl mb-2' /> {/* File icon */}
+                <span>Upload a File</span>
+                <input type='file' className='hidden' />
+              </label>
+            </div>
+
+            <div className='mt-4'>
+              {/* Submit Button */}
+              <button
+                type='submit'
+                className='bg-green-800 text-white p-2 w-[470px] rounded-md hover:bg-green-600 focus:outline-none focus:ring focus:border-green-300'
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <form>
-        <div>
-          <h2 className="text-green-800">Name</h2>
-          <div className='flex space-x-4'>
-            <input
-              className="bg-gray-200 p-2 rounded w-1/2"
-              placeholder='First'
-              name='firstName'
-              value={formData.firstName}
-              onChange={handleInputChange}
-            />
-            <input
-              className="bg-gray-200 p-2 rounded w-1/2"
-              placeholder='Last'
-              name='lastName'
-              value={formData.lastName}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-green-800">Company Name</h2>
-          <input
-            className="bg-gray-200 p-2 rounded w-full"
-            name='companyName'
-            value={formData.companyName}
-            onChange={handleInputChange}
-          />
-        </div>
-
-        <div>
-          <h2 className="text-green-800">Address</h2>
-          <input
-            className="bg-gray-200 p-2 rounded w-full"
-            placeholder='Street address'
-            name='address'
-            value={formData.address}
-            onChange={handleInputChange}
-          />
-        </div>
-
-        <div className='flex space-x-4'>
-          <div>
-            <h2 className="text-green-800">City</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px] "
-              name='city'
-              value={formData.city}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <h2 className="text-green-800">Region</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px]"
-              type='text'
-              name='region'
-              value={formData.region}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-
-        <div className='flex space-x-4'>
-          <div>
-            <h2 className="text-green-800">Zip code</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px]"
-              name='zipCode'
-              value={formData.zipCode}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <h2 className="text-green-800">Country</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px]"
-              type='text'
-              name='country'
-              value={formData.country}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-
-        <div className='flex space-x-4'>
-          <div>
-            <h2 className="text-green-800">Contact Number</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px]"
-              name='contactNumber'
-              value={formData.contactNumber}
-              onChange={handleInputChange}
-            />
-          </div>
-          <div>
-            <h2 className="text-green-800">E-Mail</h2>
-            <input
-              className="bg-gray-200 p-2 rounded w-[225px]"
-              type='text'
-              name='email'
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-green-800">Gst Number</h2>
-          <input
-            className="bg-gray-200 p-2 rounded w-full "
-            type='text'
-            name='gstNumber'
-            value={formData.gstNumber}
-            onChange={handleInputChange}
-          />
-        </div>
-
-        <div>
-          <h2 className="text-green-800">Product Details</h2>
-          <div className='border-dotted h-[25px]'></div>
-        </div>
-
-        <div>
-          <h2 className="text-green-800">Upload PDF</h2>
-          <label className="flex flex-col items-center bg-gray-200 p-2 rounded w-full border-dotted border-black">
-            <FiFile className="text-4xl mb-2" /> {/* File icon */}
-            <span>Choose a file</span>
-            <input type="file" className="hidden" />
-          </label>
-        </div>
-      </form>
     </div>
   );
 };
