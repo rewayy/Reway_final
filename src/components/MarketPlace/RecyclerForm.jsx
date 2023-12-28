@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { MdCloudUpload } from "react-icons/md";
 import { Link, Navigate } from 'react-router-dom';
+import { useRecycler } from './RecyclerContext';
 
 const RecyclerForm = () => {
+  const { addRecycler } = useRecycler();
   const [quotationPage, setQuotationPage] = useState('');
   const [registeredNumber, setRegisteredNumber] = useState('');
   const [quotedValue, setQuotedValue] = useState('');
@@ -10,14 +12,20 @@ const RecyclerForm = () => {
 
   async function handleNewRecycler(ev) {
     ev.preventDefault();
-    console.log(e.target.value)
+    const newRecycler = {
+      quotationPage,
+      registeredNumber,
+      quotedValue,
+    };
+    addRecycler(newRecycler); 
+    setRedirect(true);
     
-    try {
-      alert('New Recycler added successfully');
-      setRedirect(true);
-    } catch (e) {
-      alert('Recycler not added');
-    }
+    // try {
+    //   alert('New Recycler added successfully');
+    //   setRedirect(true);
+    // } catch (e) {
+    //   alert('Recycler not added');
+    // }
   }
 
   if (redirect) {
