@@ -23,7 +23,7 @@ const AllSection = () => {
         <Timeline />
         <ContactUS/>
         <AppPage/>
-        <Footer/>
+        <Footer/>      
         {/* Rest of the components will get added here */}
         
 

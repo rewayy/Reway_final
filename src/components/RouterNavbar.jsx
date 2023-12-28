@@ -27,7 +27,7 @@ const Navbar = () => {
       ];
 
   return (
-            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont  mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
+            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont overlay-hidden mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
 
                     {/* Background-logo */}
                     <div className='border h-max-[25px] w-auto  p-12'>
