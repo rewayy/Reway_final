@@ -1,45 +1,114 @@
-import React from 'react'
-import { MdCloudUpload } from "react-icons/md";
+import React from 'react';
+import { MdCloudUpload } from 'react-icons/md';
+import { FiFile } from 'react-icons/fi'; // Add import for FiFile
 import { Link } from 'react-router-dom';
 
 const RecyclerForm = () => {
+  
   return (
-    <div  className='w-full h-full  min-w-[375px] md:mb-[15vh] mb-6 relative'>
-    <div className='max-w-[1183px] lg:m-auto mx-2  md:mx-4  py-8  rounded-md text-black  h-full flex  justify-center'>
-             
-            <div className='bg-green-300  bg-opacity-60 shadow-md border border-green-300 w-2/3 h-[60vh] flex  flex-col  justify-center rounded-md md:mx-20'>
-              <h1 className='text-[#008037] text-center'>Recycler form</h1>
-              <form action="#" className='flex flex-col justify-center items-center gap-4 my-8 mx-20'>
-                <div className='flex flex-col w-full'>
-                    <label className='text-xs p-1 text-green-700' >Quotation Page</label>
-                    <input type="text" id="quotationPage" placeholder='Quotation page' className='w-full shadow-md hover:shadow-lg text-start h-10  rounded-md text-xs md:text-sm px-4' />
-                </div>
+    <div className='w-full min-w-[375px] md:mb-[15vh] mb-6 relative'>
+    <div className='max-w-[1183px] lg:m-auto mx-2 md:mx-4 py-8 rounded-md text-black flex justify-center'>
+      <div className='w-full md:w-[500px] mx-auto px-4 py-6 rounded-md bg-wgite'>
+        <div className='py-3'>
+          <h1 className='text-green-800 text-center text-2xl font-bold'>RECYCLER INFORMATION</h1>
+        </div>
 
-                <div className='flex flex-col w-full'>
-                    <label  className='text-xs p-1 text-green-700' >Registered Number</label>
-                    <input type="text" id="registeredNumber" placeholder='Registered number' className='w-full shadow-md hover:shadow-lg text-start h-10  rounded-md text-xs md:text-sm px-4' />
-                </div>
-
-                  <div className='w-full flex flex-col'>
-                    <label  className='text-xs p-1 text-green-700' >Total Price Quote Value (Rs.)</label>
-                    <input type="text" id="priceQuoteValue" placeholder='Total price quote value (Rs.)' className='w-full shadow-md hover:shadow-lg text-start h-10  rounded-md text-xs md:text-sm px-4' />
-
-                  </div>
-
-                    <div className='w-full flex text-white bg-green-400 py-2 rounded-md shadow-md justify-center gap-0 text-sm  flex-col items-center'>
-                      <p className='mt-1 text-sm'>Upload Quotation PDF</p>
-                      <Link to='/'>
-                        <MdCloudUpload size={40} className='cursor-pointer' />
-                      </Link>
-                      {/* <a href="www.google.com">google</a> */}
-                    </div>
-              </form>
-      
+          <form>
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Name</h2>
+              <div className='flex space-x-4'>
+                <input className='bg-gray-200 p-2 rounded w-1/2' placeholder='First' />
+                <input className='bg-gray-200 p-2 rounded w-1/2' placeholder='Last' />
+              </div>
             </div>
-              
-    </div>
-</div>
-  )
-}
 
-export default RecyclerForm
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Company Name</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' />
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Address</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' placeholder='Street address' />
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <input   placeholder='City' className='bg-gray-200 p-2 my-3 rounded w-[225px]' />
+              </div>
+              <div>
+                <input  placeholder='Region' className='bg-gray-200 p-2 my-3 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <input  placeholder='Zip code ' className='bg-gray-200 p-2 my-3 rounded w-[225px]' />
+              </div>
+              <div>
+                <input  placeholder='Country' className='bg-gray-200 my-3 p-2 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div className='flex space-x-4'>
+              <div>
+                <h2 className='text-green-800 font-bold text-xl'>Contact Number</h2>
+                <input className='bg-gray-200 p-2 rounded w-[225px]' />
+              </div>
+              <div>
+                <h2 className='text-green-800 font-bold text-xl'>E-Mail</h2>
+                <input className='bg-gray-200 p-2 rounded w-[225px]' type='text' />
+              </div>
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Gst Number</h2>
+              <input className='bg-gray-200 p-2 rounded w-full' type='text' />
+            </div>
+
+            <div>
+              <h2 className='text-green-800 font-bold text-xl'>Product Details</h2>
+              <div className='border-dotted h-[25px]'></div>
+            </div>
+
+            <div>
+              
+              <label className='flex flex-col items-center bg-gray-200 p-2 rounded w-full border-dotted border-black'>
+                <FiFile className='text-4xl mb-2' /> {/* File icon */}
+                <span>Upload PDF</span>
+                <input type='file' className='hidden' />
+              </label>
+            </div>
+
+            <div>
+              <h2 className='text-green-800  text-xl font-bold text-xl'>Product Image</h2>
+              <div className='border-dotted h-[25px]'></div>
+            </div>
+
+            <div>
+              
+              <label className='flex flex-col items-center bg-gray-200 p-2 rounded w-full border-dotted border-black'>
+                <FiFile className='text-4xl mb-2' /> {/* File icon */}
+                <span>Upload a File</span>
+                <input type='file' className='hidden' />
+              </label>
+            </div>
+
+            <div className='mt-4'>
+              {/* Submit Button */}
+              <button
+                type='submit'
+                className='bg-green-800 text-white p-2 w-[470px] rounded-md hover:bg-green-600 focus:outline-none focus:ring focus:border-green-300'
+              >
+                Submit
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default RecyclerForm;
