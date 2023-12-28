@@ -9,6 +9,7 @@ const Recyclers = () => {
 
         <div  className='w-full h-full  min-w-[375px] md:mb-[15vh] mb-6 relative'>
             <div className='max-w-[1183px] lg:m-auto mx-2  md:mx-4 flex-col rounded-md text-black  h-screen flex   text-center'>
+                <h1 className='text-green-600 p-1'>Recycler's Page</h1>
                     <div className='flex flex-col justify-center items-center gap-4 w-full border bg-green-200 px-4 rounded-md py-6 my-2'>
                         {recyclers.map((recycler, index) => (
                             <p
