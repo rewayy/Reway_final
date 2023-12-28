@@ -21,7 +21,7 @@ import One13 from './pages/13';
 import One14 from './pages/14';
 import One15 from './pages/15';
 import MarketPlace from './pages/MarketPlace';
-// import Recyclers from './components/MarketPlace/recyclers';
+import Recyclers from './components/MarketPlace/recyclers';
 import Sellers from './components/MarketPlace/sellers';
 import RecyclerForm from './components/MarketPlace/RecyclerForm';
 
@@ -49,7 +49,7 @@ export default function App() {
           <Route path="/One13" element={<One13 />} />
           <Route path="/One14" element={<One14 />} />
           <Route path="/One15" element={<One15 />} />
-          {/* <Route path="/Recyclers" element={<Recyclers/>} /> */}
+          <Route path="/Recyclers" element={<Recyclers/>} />
           <Route path="/recycler-form" element={<RecyclerForm/>} />
           <Route path='/sellers' element={<Sellers/>} />
       </Route>
