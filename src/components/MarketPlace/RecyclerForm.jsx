@@ -22,21 +22,23 @@ const RecyclerForm = () => {
     }
 
     try {
-      alert('New Recycler added successfully');
+      alert('Bid added successfully');
       setRedirect(true);
     } catch (e) {
-      alert('Recycler not added');
+      alert('Bid not added');
     }
   }
 
   const handlePageUpload = (ev) => {
     setQuotationPage(ev.target.value);
     setPageUploaded(true);
+    setFormError('');
   };
 
   const handlePdfUpload = (ev) => {
     setQuotationPdf(ev.target.value);
     setPdfUploaded(true);
+    setFormError('');
   };
 
   if (redirect) {
