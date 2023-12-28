@@ -1,5 +1,7 @@
 import React from 'react';
 import { useRecycler } from './RecyclerContext'; 
+import {IoAdd} from 'react-icons/io5'
+import { Link } from 'react-router-dom';
 
 const Recyclers = () => {
     const { recyclers } = useRecycler();
@@ -18,6 +20,7 @@ const Recyclers = () => {
                             </p>
                         ))}
                     </div>
+                    <Link to={'/recycler-form'} className='bg-green-600 flex  justify-center items-center gap-2 font-mont hover:bg-green-700  px-4 py-2 rounded-full text-white text-sm'>  <IoAdd size={25} /> Add Recycler</Link>
             </div>
         </div>
     );
