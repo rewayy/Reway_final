@@ -16,30 +16,30 @@ const Recyclers = () => {
                             {/* table heading */}
                                 <table className='w-full flex flex-col gap-1'>
                                     <thead>
-                                        <tr className=' grid grid-cols-3  md:grid-cols-6 items-center  bg-green-600 bg-opacity-80 text-white rounded-md '>
+                                        <tr className=' grid grid-cols-3  lg:grid-cols-6 items-center  bg-green-600 bg-opacity-80 text-white rounded-md '>
                                             <th className=' text-xs md:text-[20px] p-1 md:p-4 border-r-2 leading-3 md:leading-0 font-normal '>Company Name</th>
-                                            <th className=' text-xs hidden md:block  md:text-[20px] p-1 md:p-4  font-normal leading-3 border-r-2 md:leading-0 '>Product Details</th>
+                                            <th className=' text-xs hidden lg:block  md:text-[20px] p-1 md:p-4  font-normal truncate leading-3 border-r-2 md:leading-0 '>Product Details</th>
                                             <th className=' text-xs md:text-[20px] p-1 md:p-4  border-r-2 leading-3 md:leading-0 font-normal '>Product Image</th>
-                                            <th className=' text-xs hidden md:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  font-normal md:leading-0'>Company Address</th>
-                                            <th className=' text-xs hidden md:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  font-normal md:leading-0'>Status</th>
+                                            <th className=' text-xs hidden lg:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  font-normal md:leading-0'>Company Address</th>
+                                            <th className=' text-xs hidden lg:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  font-normal md:leading-0'>Status</th>
                                             <th className=' text-xs md:text-[20px] p-1 font-normal '>Purchase</th>
                                         </tr>
                                     </thead>
                                     {/* Fetched data div */}
                                     <tbody>
-                                        <tr className='bg-white grid grid-cols-3 md:grid-cols-6 text-center items-center justify-center border-2 border-blue-500 rounded-md w-full '>
-                                            <td className='text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 p-2 leading-3 border-r-2'>RECYCLER COMPANY 1</td>
-                                            <td className='text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 p-2 leading-3 border-r-2'>Product_details.pdf</td>
-                                            <td className='hidden md:block text-xs md:text-sm border-slate-300  text-slate-500  p-2 border-r-2  leading-3'> recycler.jpg</td>
-                                            <td className=' hidden md:block text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 leading-3 p-2 border-r-2'>22 Patel Nagar,New Delhi,11008</td>
-                                            <td className='hidden md:block  border-slate-300 border-r-2 p-2 '>
-                                                <button className='hidden md:block text-xs md:text-sm   bg-green-500 uppercase  text-white mx-12 rounded-md hover:bg-green-600 p-2  leading-3'> Available</button>
+                                        <tr className='bg-white grid grid-cols-3 lg:grid-cols-6 text-center items-center justify-center border-2 border-blue-500 rounded-md w-full '>
+                                            <td className='text-xs md:text-sm border-slate-300 overflow-hidden  text-slate-500 p-2 leading-3 border-r-2'>RECYCLER COMPANY 1</td>
+                                            <td className='text-xs md:text-sm border-slate-300 overflow-hidden truncate text-slate-500 p-2 leading-3 border-r-2'>Product_details.pdf</td>
+                                            <td className='hidden lg:block text-xs md:text-sm border-slate-300  text-slate-500  p-2 border-r-2  leading-3'> recycler.jpg</td>
+                                            <td className=' hidden lg:block text-xs md:text-sm border-slate-300  overflow-hidden text-slate-500 leading-3 p-2 border-r-2'>22 Patel Nagar,New Delhi,11008</td>
+                                            <td className='hidden lg:flex justify-center items-center border-slate-300 border-r-2 p-2 '>
+                                                <button className=' text-xs md:text-sm   bg-green-500 uppercase  text-white mx-12 rounded-md hover:bg-green-600 p-2  leading-3'> Available</button>
                                             </td>
                                             <td className='text-xs md:text-sm flex  justify-center items-center  p-2 border-r-2 text-slate-500'>
                                                 <Link to={'/recycler-form'} 
-                                                className='bg-blue-600 flex  justify-center items-center hover:bg-blue-700  text-center text-white rounded-md py-1 md:py-2 mx-2 md:mx-10 w-full'>
+                                                className='bg-blue-600 flex  justify-center items-center hover:bg-blue-700  text-center text-white rounded-md py-1 md:py-2 px-1 mx-2 md:mx-10 w-full'>
                                                     Buy
-                                                    <MdAttachMoney className='hidden md:block' size={24}/>
+                                                    <MdAttachMoney className='hidden lg:block' size={24}/>
                                                 </Link>
                                             </td>
                                         </tr>
