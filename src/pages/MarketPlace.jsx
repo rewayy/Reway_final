@@ -17,10 +17,10 @@ const MarketPlace = () => {
             </h1>
             <div className='flex justify-center my-12'>
               <Link
-to='/recycler-form'  
-className='text-white bg-green-700 mx-auto rounded-3xl text-xl py-1 px-9 block md:inline-block md:mx-2 cursor-pointer hover:cursor-pointer'>
-RECYCLERS
-</Link>
+                to='/recyclers'  
+                className='text-white bg-green-700 mx-auto rounded-3xl text-xl py-1 px-9 block md:inline-block md:mx-2 cursor-pointer hover:cursor-pointer'>
+                RECYCLERS
+              </Link>
 
 <Link
 to='/sellers'  

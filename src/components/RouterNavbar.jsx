@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont overlay-hidden mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
 
                     {/* Background-logo */}
-                    <div className='border h-max-[25px] w-auto  p-12'>
+                    <div className=' h-max-[25px] w-auto  p-12'>
   <Link to={'/'}>
     <img
       className='rounded-lg brightness-100 h-[10px] w-auto  md:ml-0'
