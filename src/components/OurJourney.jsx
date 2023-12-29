@@ -13,7 +13,7 @@ export const OurJourney = () => {
                 </div>
                 {/* col-2 */}
                 <div className=' flex flex-col justify-center  items-center'>
-                    <div className='border flex flex-col items-center  '>
+                    <div className='flex flex-col items-center  '>
                        <h1 className='text-black'>OUR JOURNEY,<br /> OUR INSPIRATION</h1>
                         <div className='md:w-[26vw] w-[60vw] rounded-full border-2 mt-1 text-center border-green-300'></div>
 
@@ -28,15 +28,17 @@ export const OurJourney = () => {
     </div>
 
                 {/* hidden on mobile screen */}
-                <div className='hidden md:block' >
-                    <h1 className='md:flex gap-2  text-black mb-2 mt-12'>The 
-                        <div className='flex flex-col'>
-                            <p>question was,</p>
-                            <span className=' border-2 mt-1 border-green-300 w-full'></span>&nbsp;
-                        </div>
-                        How?
-                    </h1>
-                </div>
+                <div className='hidden md:block'>
+    <h1 className='md:flex gap-2 text-black mb-2 mt-12'>
+        <span className='capitalize'>The </span>
+        <div className='flex flex-col'>
+            <p><span className='capitalize'>question was,</span></p>
+            <span className='border-2 mt-1 border-green-300 w-full'></span>&nbsp;
+        </div>
+        <span className='capitalize'>how?</span>
+    </h1>
+</div>
+
 
                 {/* visible on mobile */}
                 <div className='md:hidden w-full my-6 px-12  text-center'>
@@ -89,7 +91,7 @@ export const OurJourney = () => {
                         </div>
                     </div>
                     <div className='w-full px-8 text-center md:text-left md:px-16 md:py-4 pb-4  text-xs md:text-sm leading-4 md:leading-6'>
-                    With this mission to catalyse the journey of buildinga circular economy “Reway” was born.
+                    With this mission to catalyse the journey of building a circular economy “Reway” was born.
                     </div>
                 </div>
 

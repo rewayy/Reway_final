@@ -12,14 +12,14 @@ const AppPage = () => {
   });
 
   return (
-    <div className="download-app-page ">
+    <div className="download-app-page  ">
       <div className="circle-container ">
       <div className="green_c">
   <div className="circle-background"></div>
 </div>
         </div>
           <div className=" whole text-left">
-         <h2 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
+         <h2 className="text-black py-[30px] text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
   Download The <span className="text-green-500"> Reway</span> 
   <br/> App, Now!
 </h2>
@@ -33,7 +33,7 @@ const AppPage = () => {
           <p className="font-bold text-sm">for recyclers</p>
           <p className="font-thin text-black py-6">Find more E-waste pickups!
 Grow your recycling business, recycle the e-waste.</p>
-<a href="https://reway.com" >
+<a href=" https://play.google.com/store/apps/details?id=com.rewaytech.rewayrecyclers" >
   <img className="max-h-[50px]" src={googlebadge} alt="Google Badge" />
 </a>
 
@@ -45,14 +45,14 @@ Grow your recycling business, recycle the e-waste.</p>
             <p className="font-bold text-sm">for consumers</p>
             <p className="text-black font-thin py-6"> Transform E-waste, sell to trusted recyclers.
 Track impact, earn rewards.</p>
-<a href="https://reway.com" >
+<a href=" https://play.google.com/store/apps/details?id=com.rewaytech.rewayusers" >
   <img className="my-5 max-h-[50px]" src={googlebadge} alt="Google Badge" />
 </a>
 
           </div>
           </div>
           </div>
-          <div className="app-logo py-6">
+          <div className="app-logo py-[100px] ">
             <img src={rewayphonelogo} alt="App Logo" />
           </div>
       </div>

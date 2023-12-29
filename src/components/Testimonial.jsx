@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
+import {user } from '../assets'
+import {usser } from '../assets'
 
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -21,35 +23,54 @@ const settings = {
       },
     },
     {
-      breakpoint:1200,
-      settings:{
-        slidesToShow:2,
-        slidesToScroll:1,
-      }
-    }
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
   ],
+  appendDots: (dots) => (
+    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+      {dots.map((dot, index) => (
+        <button
+          key={index}
+          className={`w-4 h-4 rounded-full ${dot.props.className}`}
+          style={{
+            backgroundColor: dot.props.className.includes("slick-active") ? "white" : "green",
+            padding: "4px",
+            cursor: "pointer",
+            outline: "none", // Keep the outline for accessibility
+          }}
+          onClick={() => sliderRef.current.slickGoTo(index)}
+        ></button>
+      ))}
+    </div>
+  ),
 };
+
+
 
 const data = [
   {
-    name: 'Kundan',
-    img: '',
-    review: "I couldn't be happier with the experience. The process was incredibly smooth, and knowing that.",
+    name: 'Raghav',
+    img: {user},
+    review: "Very smooth experience, I just uploaded the details about my office's electronic waste and got multiple deals within 2 days",
   },
   {
-    name: 'Raman',
-    img: '',
-    review: "From start to finish, the process was seamless, and I appreciate their commitment to sustainability.",
+    name: 'Dinesh',
+    img: {user},
+    review: "We were planning to release a tender for selling our bulk e waste but with Reway the selling experience was even better.",
   },
   {
-    name: 'Chaman',
-    img: '',
-    review: "i am dasjdsajidf ijbsdfbjkdsadf sdadsfj fvad adsfkh dfi hdfavd dfava",
+    name: 'Sakshi',
+    img: {user},
+    review: "For more than a month we were inquiring multiple recyclers for a price quote but with Reway we got connected with multiple recyclers within a single working day.",
   },
   {
-    name: 'dhiman',
+    name: 'Mahima ',
     img: '',
-    review: "i am glad i wasb iausyf ujd fahhb ds a adna oaefief sdfjk fav df jk a  ds  d s fg irgi ihduidsg ifiuhsgdfi "
+    review: "Team Reway was extremely helpful, they guided us through the whole process of E-Waste selling and proper disposal with an authorised recycler. "
   }
 ];
 
@@ -77,13 +98,15 @@ export const Testimonial = () => {
               </div>
             </div>
             <div className='w-1/2 flex  items-center justify-center'>
-              <div className='relative border border-black bg-green-50 rounded-full  w-[100px] h-[100px]'>
-                <img
-                  src={testimonial.img}
-                  alt={`Testimonial ${index}`}
-                  className='absolute rounded-full   w-full h-full object-cover'
-                />
-              </div>
+             <div className='relative border bg-green-50 rounded-full w-[100px] h-[100px]'>
+  <img
+    src={usser}
+    alt={`Testimonial ${index}`}
+    className='absolute rounded-full w-full h-full object-cover '
+    style={{ objectFit: 'contain' }}
+  />
+</div>
+
             </div>
           </div>
         </div>

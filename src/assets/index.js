@@ -19,8 +19,12 @@ import logo2 from './logo2.jpg'
 import logo3 from './logo3.jpg';
 import cart from './cart.png';
 import green_earth from './green_earth.png';
+import twit from './twit.png';
+import linkden from './linkden.png';
+import user from "./user.png";
+import usser from "./usser.jpg";
 
 
 
 //exporting images
-export {cart,green_earth,logo3,logo,wasteImage, youtube, logo2,E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};
+export {usser,user,linkden,twit,cart,green_earth,logo3,logo,wasteImage, youtube, logo2,E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};

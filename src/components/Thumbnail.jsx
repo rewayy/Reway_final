@@ -14,8 +14,8 @@ export const Thumbnail = () => {
                 </div>
 
             <div className='flex flex-col md:flex-row justify-center  p-4 py-0 md:py-8 sm:py-0 gap-4 md:gap-24 items-center'>
-                <div className=' md:flex  px-4 md:p-2  '>
-                    <h1 className='text-black text-center'>ONE STEP, <br className='hidden md:block' /> ONE CHOICE <br className='hidden md:block' /> TO MEND THE PLANET!</h1>
+                <div className=' md:flex px-4 md:p-2 text-center ml-[-70px]  '>
+                    <h1 className='text-black text-5xl text-center'>ONE STEP, <br className='hidden md:block' /> ONE CHOICE <br className='hidden md:block' /> TO MEND THE PLANET!</h1>
                 </div>
               
               {/* Youtube-video here */}
