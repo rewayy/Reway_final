@@ -15,22 +15,26 @@ const Recyclers = () => {
                      
                             {/* table heading */}
                                 <div className='w-full flex flex-col gap-1'>
-                                    <div className='w-full grid grid-cols-3 md:grid-cols-5 items-center relative h-10  bg-green-600 bg-opacity-80 text-white rounded-md '>
+                                    <div className='w-full grid grid-cols-3 md:grid-cols-6 items-center relative h-10  bg-green-600 bg-opacity-80 text-white rounded-md '>
                                         <div className=' text-xs md:text-[20px] p-1 md:p-4 border-r-2 leading-3 md:leading-0 '>Company Name</div>
                                         <div className=' text-xs hidden md:block  md:text-[20px] p-1 md:p-4  leading-3 border-r-2 md:leading-0 '>Product Details</div>
                                         <div className=' text-xs md:text-[20px] p-1 md:p-4  border-r-2 leading-3 md:leading-0 '>Product Image</div>
                                         <div className=' text-xs hidden md:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  md:leading-0'>Company Address</div>
+                                        <div className=' text-xs hidden md:block md:text-[20px] p-1 md:p-4 border-r-2 leading-3  md:leading-0'>Status</div>
                                         <div className=' text-xs md:text-[20px] p-1 '>Purchase</div>
                                     </div>
                                     {/* Fetched data div */}
-                                    <div className='bg-white grid grid-cols-3 md:grid-cols-5 text-center items-center justify-center rounded-md w-full '>
+                                    <div className='bg-white grid grid-cols-3 md:grid-cols-6 text-center items-center justify-center rounded-md w-full '>
                                         <div className='text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 p-2 leading-3 border-r-2'>RECYCLER COMPANY 1</div>
                                         <div className='text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 p-2 leading-3 border-r-2'>Product_details.pdf</div>
                                         <div className='hidden md:block text-xs md:text-sm border-slate-300  text-slate-500  p-2 border-r-2  leading-3'> recycler.jpg</div>
-                                        <div className=' hidden md:block text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 leading-3 p-2 border-r-2'>22 Patel Nagar,New Delhi,11008</div>
+                                            <div className=' hidden md:block text-xs md:text-sm border-slate-300 overflow-hidden text-slate-500 leading-3 p-2 border-r-2'>22 Patel Nagar,New Delhi,11008</div>
+                                        <div className='  border-slate-300 border-r-2 p-2 '>
+                                            <button className='hidden md:block text-xs md:text-sm   bg-green-500   text-white mx-12 rounded-md hover:bg-green-600 p-2  leading-3'> Available</button>
+                                        </div>
                                         <div className='text-xs md:text-sm flex  justify-center items-center  p-2 border-r-2 text-slate-500'>
                                             <Link to={'/recycler-form'} 
-                                            className='bg-blue-600 flex  justify-center items-center hover:bg-blue-700  text-center text-white rounded-md py-1 md:py-2 mx-2 md:mx-8 w-full'>
+                                            className='bg-blue-600 flex  justify-center items-center hover:bg-blue-700  text-center text-white rounded-md py-1 md:py-2 mx-2 md:mx-10 w-full'>
                                                 Buy
                                                 <MdAttachMoney className='hidden md:block' size={24}/>
                                             </Link>
