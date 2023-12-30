@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
 import './heroStyles.css';
+import { hero } from '../../assets';
 
 
 const HeroContent = () => {
@@ -9,12 +10,14 @@ const HeroContent = () => {
   return (
     <div>
         {/* overlay */}
-        <div className='bg-[#008037] bg-gradient-to-br from-[#008037]  bg-opacity-90 top-0 left-0 w-full h-screen absolute z-0 ' />
+        <div className='bg-[#008037] bg-gradient-to-br from-[#008037]  bg-opacity-70 top-0 left-0 w-full h-screen absolute z-0 ' />
 
         {/* Hero-image */}
         <img className='w-full h-screen left-0 top-0 object-cover  position-bottom  ' 
-        src="https://images.pexels.com/photos/14593478/pexels-photo-14593478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="hero-img" />
+        src={hero}
+        alt='hero image'
+
+        />
 
         {/* Headline content */}
         <div className=' w-full h-full  absolute -top-8 mt-4 md:mt-2 md:gap-4 gap-6 text-white  flex flex-col  justify-center items-center  ' >
