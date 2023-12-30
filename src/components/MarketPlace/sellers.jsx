@@ -77,7 +77,7 @@ const Sellers = () => {
             </div>
 
             <div>
-              <h2 className='text-green-800 text-xl font-bold text-xl'>Product Image</h2>
+              <h2 className='text-green-800 text-xl font-bold '>Product Image</h2>
               <div className='border-dotted h-[25px]'></div>
             </div>
 
