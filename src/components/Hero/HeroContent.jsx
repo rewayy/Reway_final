@@ -16,7 +16,7 @@ const HeroContent = () => {
     <Link to="tel:+919315836383" className="mb-4">
       <img src={call} alt="call" className="right-0 h-9 w-[auto] my-2 ml-3" />
     </Link>
-    <Link to="https://wa.me/123456789" className="mb-4">
+    <Link to="https://wa.me/9315836383" className="mb-4">
       {/* Replace 123456789 with the actual WhatsApp number */}
       <img src={whatsapp} alt="whatsapp" className="right-0 h-9 w-[auto] my-2 ml-3" />
     </Link>
