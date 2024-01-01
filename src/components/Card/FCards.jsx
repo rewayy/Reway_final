@@ -21,22 +21,39 @@ class FCards extends Component{
                             </div>
 
                     <div className="sdg-row grid px-20    sm:px-20 sm:grid-cols-2  md:grid-cols-3 md:px-4 lg:px-0 lg:grid-cols-4 p-2 mt-0 md:mt-8 ">
-                        <div className="col-md-3   ">
-                                <Cards  cardId="1 " imgsrc={E_PRINT_12} title="Responsible Consumption And Production"
-                                para="Ensure sustainable consumption and production patterns." />
-                        </div>
-                        <div className="col-md-3 ">
-                                <Cards cardId="2 " imgsrc={E_WEB_13} title="Climate Action"
-                                para="Take urgent action to combat climate change and its impacts."/>
-                        </div>
-                        <div className="col-md-3 ">
-                                <Cards cardId="3 " imgsrc={E_PRINT_15} title="Life on Land"
-                                para="Protect, restore and promote sustainable use of terrestial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss."/>
-                        </div>
-                        <div className="col-md-3 ">
-                                <Cards cardId="4 " imgsrc={E_PRINT_17} title="Partnerships for the Goals"
-                                para="Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development. "/>
-                        </div>
+                    <div className="col-md-3">
+    <Cards
+        cardId="1"
+        imgsrc={E_PRINT_12}
+        title={<span style={{ fontWeight: 'bold' }}>Responsible Consumption And Production</span>}
+        para="Ensure sustainable consumption and production patterns."
+    />
+</div>
+<div className="col-md-3">
+    <Cards
+        cardId="2"
+        imgsrc={E_WEB_13}
+        title={<strong>Climate Action</strong>}
+        para="Take urgent action to combat climate change and its impacts."
+    />
+</div>
+<div className="col-md-3">
+    <Cards
+        cardId="3"
+        imgsrc={E_PRINT_15}
+        title={<strong>Life on Land</strong>}
+        para="Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss."
+    />
+</div>
+<div className="col-md-3">
+    <Cards
+        cardId="4"
+        imgsrc={E_PRINT_17}
+        title={<strong>Partnerships for the Goals</strong>}
+        para="Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development."
+    />
+</div>
+
                     </div>
                 </div>
       

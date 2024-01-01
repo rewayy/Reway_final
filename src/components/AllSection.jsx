@@ -21,8 +21,8 @@ const AllSection = () => {
         <Map/>
         <Testimonial/>
         <Timeline />
-        <ContactUS/>
         <AppPage/>
+        <ContactUS/>
         <Footer/>      
         {/* Rest of the components will get added here */}
         
