@@ -58,11 +58,11 @@ const RecyclerForm = () => {
             className='flex flex-col justify-center items-center gap-4 my-8 mx-20'
           >
             <div className='flex flex-col w-full'>
-              <label className='text-xs p-1 text-green-700'>Registered Number</label>
+              <label className='text-xs p-1 text-green-700'>Registered Name</label>
               <input
                 type='text'
                 id='registeredNumber'
-                placeholder='Registered number'
+                placeholder='Registered Name'
                 value={registeredNumber}
                 onChange={(ev) => setRegisteredNumber(ev.target.value)}
                 className='w-full shadow-md hover:shadow-lg text-start h-10  rounded-md text-xs md:text-sm px-4'
