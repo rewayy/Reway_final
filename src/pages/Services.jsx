@@ -29,7 +29,7 @@ const Services = () => {
         },
         animate : (id) => ({
            
-            ease: "easeOut",
+            
             opacity : 1,
             y:0,
             transition : {
