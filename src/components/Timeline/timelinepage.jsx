@@ -17,9 +17,9 @@ function Timeline() {
 
   return (
     <div id='timeline' className='py-8 font-mont font-normal flex flex-col justify-center items-center '>
-      <h1 className="timeline-title text-black flex flex-col  text-4xl ">Our Journey <br/>
+      <h1 className="timeline-title text-black flex flex-col  text-4xl ">Our Journey So Far<br/>
         < span className='border-2 mt-1 border-green-300 rounded-full w-full' />
-        <h2 className='font-normal underline-none lowercase text-[25px] text-gray-800'>so far</h2>
+      
       </h1>
              
       <VerticalTimeline  >
