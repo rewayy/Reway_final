@@ -3,7 +3,7 @@
 //importing images
 import logo from '../assets/logo.jpeg';
 import wasteImage from '../assets/wasteImage.png';
-import youtube from '../assets/youtube.png';
+import youtube from '../assets/Youtube.png';
 import E_PRINT_12 from '../assets/E_PRINT_12.jpg';
 import E_PRINT_17 from '../assets/E_PRINT_17.jpg';
 import E_PRINT_15 from '../assets/E_PRINT_15.jpg';
