@@ -27,7 +27,8 @@ const Navbar = () => {
       ];
 
   return (
-            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont overlay-hidden mb-4 rounded-lg  text-black   h-full flex items-center justify-between'>
+    <div className='w-full m-auto  '>
+            <div className='max-w-[1183px] min-w-[375px] relative m-auto font-mont overlay-hidden mb-4 rounded-lg   text-black   h-full flex items-center justify-between'>
 
                     {/* Background-logo */}
                     <div className=' h-max-[25px] w-auto  p-12'>
@@ -96,6 +97,7 @@ const Navbar = () => {
                         E-marketplace
                     </Link>
 
+                </div>
                 </div>
 )}
 

@@ -26,8 +26,10 @@ import user from "./user.png";
 import usser from "./usser.jpg";
 import dots from "./dots.png";
 import whatsapp from "./whatsapp.png";
+import consumerProcess from './consumerProcess.svg'
+import recyclerProcess from './recyclerProcess.svg'
 
 
 
 //exporting images
-export {whatsapp,dots,hero,twit,linkden,user,usser,cart,green_earth,logo3,logo,wasteImage, youtube, logo2,E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};
+export {whatsapp,dots,hero,twit,linkden,consumerProcess,recyclerProcess,user,usser,cart,green_earth,logo3,logo,wasteImage, youtube, logo2,E_PRINT_12, E_WEB_13, E_PRINT_15, E_PRINT_17, sync,india , googlebadge,rewayphonelogo,gmail,facebook,call};
