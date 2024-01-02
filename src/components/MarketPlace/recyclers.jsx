@@ -11,8 +11,6 @@ const Recyclers = () => {
             <div className='max-w-[1393px] lg:m-auto mx-2  md:mx-4 flex-col rounded-md text-black h-screen flex   text-center'>
                     <p className='text-xl text-green-700 font-semibold my-2 '>Recycler page</p>
                     <div className='flex flex-col justify-center items-center  gap-4 text-center rounded-md py-2 md:py-6   bg-green-200 px-1 md:px-4 m-auto md:w-[70vw] my-4 '>
-                       
-                     
                             {/* table heading */}
                                 <table className='w-full flex flex-col gap-1'>
                                     <thead>
@@ -53,14 +51,4 @@ const Recyclers = () => {
 
 export default Recyclers ;
 
-// Bid btn
-{/* <button className='bg-blue-600  border-4 flex absolute right-0 top-0justify-center items-center hover:bg-blue-700 px-2 text-sm py-2  text-white rounded-md'>
-    Bid
-<MdAttachMoney size={24}/>
-</button> */}
 
-// Add btn
-{/* <Link to={'/recycler-form'} className='bg-green-600 flex  justify-center items-center gap-2 font-mont hover:bg-green-700  px-4 py-2 rounded-full text-white text-sm'>  
-<IoAdd size={25} /> 
-Add Recycler
-</Link> */}
