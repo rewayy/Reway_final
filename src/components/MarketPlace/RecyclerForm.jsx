@@ -93,7 +93,7 @@ const RecyclerForm = () => {
                 {pageUploaded ? (
                   <>
                     <FaCheck size={25} className='mr-2 text-white' />
-                    Quotation Page Uploaded
+                    Authorisation Certificate Uploaded
                   </>
                 ) : (
                   <>
