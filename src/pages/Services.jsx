@@ -1,6 +1,5 @@
 import React from 'react'
 import ServicesList from './ServiceList'
-import { Footer } from './../components/Footer';
 import { animate, motion } from "framer-motion"
 import { consumerProcess, recyclerProcess } from '../assets'
 import { RouterFooter } from '../components/RouterFooter';

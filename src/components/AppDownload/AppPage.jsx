@@ -27,7 +27,7 @@ const AppPage = () => {
   Experience convenience at your fingertips! Elevate your E-Waste disposal journey with the Reway app—download now for seamless browsing, exclusive deals, and a personalized selling & buying experience that fits your style.
 </p>
 
-          <div className="flex " >
+          <div className="flex  " >
           <div className="max-w-[200px] ">
           <h1 className="text-green-500 font-bold">Reway</h1>
           <p className="font-bold text-sm">for recyclers</p>

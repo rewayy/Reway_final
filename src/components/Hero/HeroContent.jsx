@@ -8,7 +8,7 @@ const HeroContent = () => {
   return (
     <div className="relative">
       {/* overlay */}
-      <div className='bg-[#008037] bg-gradient-to-br from-[#008037] bg-opacity-70 top-0 left-0 w-full h-screen absolute z-0 ' />
+      <div className='bg-[#008037] bg-gradient-to-br from-[#008037] bg-opacity-50 top-0 left-0 w-full h-screen absolute z-0 ' />
 
       {/* Hovering box */}
       <div className="bg-green-800 h-[300pxpx] w-16 fixed left-7 justify-end top-1/2 transform -translate-x-2/4 -translate-y-2/4 z-10 ">

@@ -50,7 +50,7 @@ export const ContactUS = () => {
       </p>
 
       <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg  " ref={form}>
-        <div className="flex flex-col items-center   md:py-12 md:bg-green-200 md:bg-opacity-90  md:shadow-lg md:rounded-lg md:mx-[50vh] ">
+        <div className="flex flex-col items-center   md:py-12  md:bg-opacity-90   md:rounded-lg md:mx-[50vh] ">
         <input
             type="text"
             name="from_name"

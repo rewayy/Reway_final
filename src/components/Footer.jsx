@@ -1,5 +1,5 @@
 import React from 'react';
-import { call, facebook, gmail, googlebadge, logo2, twit, linkden } from '../assets';
+import { call, facebook, gmail, googlebadge, logo2, twit, linkden, logo4 } from '../assets';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -9,10 +9,12 @@ export const Footer = () => {
     <div className=' min-w-[375px] md:h-[180px] shadow-lg   '>
       <div className=' flex flex-col md:flex-row bg-[#008037] text-white md:py-12 md:gap-0 gap-4 py-1  justify-center px-4 md:px-[40px] '>
         <div className='md:w-1/4 text-center mb-4 mt-16 md:mt-0 md:mb-0  md:relative'>
-        <img src={logo2} alt='logo2' className='transform scale-75 md:mt-[-10px] lg:mt-[-60px] ' />
 
 
-          <div className='flex justify-center   md:left-[18vh] py-4  mt-[-20px] '>
+        <img src={logo4} alt='logo2' className='transform scale-75 p-2    md:mt-[-10px] lg:mt-[-60px] ' />
+
+
+          <div className='flex justify-center  md:left-[18vh] py-4  mt-[-40px] '>
             <a href="https://www.linkedin.com/company/reway-technologies/" className='px-3' target="_blank" rel="noopener noreferrer">
               <img src={linkden} alt='call' className='w-6 h-6' />
             </a>
