@@ -93,12 +93,12 @@ const RecyclerForm = () => {
                 {pageUploaded ? (
                   <>
                     <FaCheck size={25} className='mr-2 text-white' />
-                    Quotation Page Uploaded
+                    Authorisation Certificate Uploaded
                   </>
                 ) : (
                   <>
                     <MdCloudUpload size={40} className='cursor-pointer' />
-                    Upload Quotation Page
+                    Upload Authorisation Certificate
                   </>
                 )}
               </label>
