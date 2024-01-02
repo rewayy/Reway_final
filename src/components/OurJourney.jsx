@@ -13,7 +13,7 @@ export const OurJourney = () => {
                     <img src={wasteImage}  alt="" />
                 </div>
                 {/* col-2 */}
-                <div className=' flex flex-col justify-center  -mt-20 items-center'>
+                <div className=' flex flex-col justify-center  -mt-20  rounded-lg items-center'>
                     <div className='flex flex-col items-center  '>
                        <h1 className='text-black'>OUR JOURNEY,<br /> OUR INSPIRATION</h1>
                         <div className='md:w-[22vw] w-[60vw] rounded-full border mt-4 text-center border-green-300'></div>
