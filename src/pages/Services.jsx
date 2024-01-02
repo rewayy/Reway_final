@@ -1,10 +1,47 @@
 import React from 'react'
 import ServicesList from './ServiceList'
-import { consumerProcess, recyclerProcess } from '../assets'
 import { Footer } from './../components/Footer';
+import { animate, motion } from "framer-motion"
+import { consumerProcess, recyclerProcess } from '../assets'
 import { RouterFooter } from '../components/RouterFooter';
 
 const Services = () => {
+    //parent 
+    const BoxVariant = {
+        initial:{
+            opacity: 0.1,
+            y: -300,
+        },
+        animate:{
+            opacity : 1,
+            y:0,
+            
+            transition : {
+                // delay : 0.5,
+                when : 'beforeChildren' //to animate it before children
+            }
+        },
+    }
+    //childern 
+    const cardVariant = { //children bydefault have all the parents properties, 
+        initial:{
+            opacity: 0,
+            y: -10,
+        },
+        animate : (id) => ({
+           
+            
+            opacity : 1,
+            y:0,
+            transition : {
+            delay : 0.08 * id,
+            }
+    })
+        ,
+}
+
+
+
   return (
     <div  className='w-full h-screen min-w-[375px] m-auto md:mb-[15vh] mb-6 relative -z-40 '>
         <div className='max-w-[1383px]  lg:m-auto mx-2 py-6 md:mx-4 relative  mb-8  rounded-md text-black  h-full flex items-center justify-center'>
@@ -19,9 +56,22 @@ const Services = () => {
                 </div>
 
                     <div  className='cursor-pointer'>
-                        <div className=' w-full h-full grid gap-4  md:gap-8 p-4 grid-co1s-1  cursor-pointer overflow-hidden md:grid-cols-2 '>
+                        <motion.div
+                        variants={BoxVariant}
+                        initial= 'initial'
+                        whileInView = 'animate'
+                        viewport={{once : true}}
+
+                        className=' w-full h-full grid gap-4  md:gap-8 p-4 grid-co1s-1  cursor-pointer overflow-hidden md:grid-cols-2 '>
                         {ServicesList.map(({id,heading, logo, description})=>(
-                            <div className=' md:text-start text-center  md:flex  gap-2 justify-center border border-green-200 shadow-sm  md:border-none  rounded-md bg-green-200 bg-opacity-45  md:shadow-md'>
+                            <motion.div
+                            variants={cardVariant}
+                            initial= 'initial'
+                            whileInView = 'animate'
+                            viewport={{once : true}}
+                            custom={id}
+                            
+                            className=' md:text-start text-center  md:flex  gap-2 justify-center border border-green-200 shadow-sm  md:border-none  rounded-md bg-green-200 bg-opacity-45  md:shadow-md'>
                                 <div className='  md:w-1/ text-center flex flex-row items-center justify-center'>
                                 <img src={logo} alt={heading} className='md:w-full  w-[60vw] h-[22vh] md:h-[16vh]   m-2 ' />
                                     
@@ -32,9 +82,9 @@ const Services = () => {
                                             <p className='text-sm px-1 md:px-0 font-normal md:tracking-wide leading-5 opacity-95 py-1'>{description} </p>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
-                        </div>
+                        </motion.div>
                     </div> 
 
                     <div className='  border-green-500 w-full h-full'>
