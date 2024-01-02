@@ -70,7 +70,7 @@ const HeroContent = () => {
         </div >
 
         {/* Button */}
-        <Link to={'/services'} className=' md:text-xl text-center  border font-mont border-white  px-2 md:px-0  hover:bg-white/20  w-[150px] md:w-[175px] h-[45px] shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
+        <Link to={'/services'} className=' md:text-xl text-center  border font-mont border-white  px-2 md:px-0  hover:bg-white/20  w-[150px] md:w-[175px]jo h-[45px] shadow-md  py-1 rounded-full cursor-pointer' > know more</Link>
       </div>
     </div>
   );

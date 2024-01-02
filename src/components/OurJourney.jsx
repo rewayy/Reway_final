@@ -2,6 +2,7 @@ import React from 'react'
 import { wasteImage } from '../assets'
 
 export const OurJourney = () => {
+  
   return (
     <div  id='about' className='w-full h-full md:pb-20  md:pt-10  '>
         <div className='max-w-[1206px] m-auto  h-full flex flex-col items-center justify-between' >
@@ -51,7 +52,8 @@ export const OurJourney = () => {
 
 
                 {/* Row-1 */}
-                <div className='w-full h-full md:flex gap-8 border-4 border-green-500 shadow-xl '>
+                <div
+                className='w-full h-full md:flex gap-8 border-4 border-green-500 shadow-xl '>
                     {/* leaf-Logo-div */}
                     <div className='md:w-40 flex justify-center items-center  '>
                         <div className='md:flex  justify-center px-8 py-4  items-center md:border-r-2 outline-offset-8 border-green-500 '>
