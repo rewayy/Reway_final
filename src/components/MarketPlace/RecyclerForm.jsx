@@ -98,7 +98,7 @@ const RecyclerForm = () => {
                 ) : (
                   <>
                     <MdCloudUpload size={40} className='cursor-pointer' />
-                    Upload Quotation Page
+                    Upload Authorisation Certificate
                   </>
                 )}
               </label>
