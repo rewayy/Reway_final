@@ -89,11 +89,11 @@ const Services = () => {
                     <div className='  border-green-500 w-full h-full'>
                             
                             <div className='mt-20 w-full '>
-                                <h1 className='text-green-600 text-center '>Recycler's Process</h1>
+                                <h1 className='text-green-600 text-center '>Sell your E-Waste to authorized recyclers in 4 easy steps!</h1>
                                 <img src={recyclerProcess} alt="recyclerProcess.svg" />
                             </div>
                             <div className=' w-full'>
-                                <h1 className='text-green-600 text-center '>Consumer's Process</h1>
+                                <h1 className='text-green-600 text-center '>Register on REM and grow your recycling business.</h1>
                                 <img src={consumerProcess} alt="consumerProcess.svg" />
                             </div>
 
