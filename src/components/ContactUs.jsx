@@ -22,7 +22,7 @@ export const ContactUS = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_juab28j', 'template_ts0n3rc', form.current, 'EanLXs4ab9oN505vC')
+      .sendForm('service_96hse6k', 'template_m0xzgmt', form.current, 'EanLXs4ab9oN505vC')
       .then((result) => {
         console.log(result.text);
         setSubmitted(true);
