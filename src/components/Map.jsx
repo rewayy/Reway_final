@@ -12,7 +12,7 @@ export const Map = () => {
           <div className="text-center md:text-start">
             <h1 className="inline-block text-4xl text-[#3A9F19] bg-[#E6F9EF]  bg-opacity-75 md:p-3 md:my-8"> OUR PAST RESULTS </h1>
           </div>
-          <div className=' shadow-[#3A9F19] shadow-md w-[30vw] px-4 rounded-md'>
+          <div className=' shadow-[#3A9F19] shadow-md md:w-[30vw] px-4 rounded-md'>
               <div className='my-12 w-full p-1  rounded-md  flex flex-col items-center  justify-center md:block'>
                 <h1 className='text-[#3A9F19]  text-4xl inline-block md:text-7xl'>21 </h1>
                 <span className='text-[#3A9F19] font-semibold text-xl md:text-3xl'>recyclers</span>
