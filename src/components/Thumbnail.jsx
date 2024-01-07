@@ -17,7 +17,7 @@ export const Thumbnail = () => {
 <div className='flex flex-col md:flex-row justify-center relative p-4 py-8 sm:py-4 h-full  gap-4 md:gap-16 items-center'>
 
     <div className='md:flex px-4 md:p-3  text-center md:ml-[-90px]'>
-        <h1 className='text-black leading-20 text-5xl text-center'>ONE STEP, <br className='hidden md:block' /> ONE CHOICE <br className='hidden md:block' /> TO MEND <br /> THE PLANET!</h1>
+        <h1 className='text-black leading-20 md:text-5xl text-center'>ONE STEP, <br className='hidden md:block' /> ONE CHOICE <br className='hidden md:block' /> TO MEND <br /> THE PLANET!</h1>
     </div>
 
     {/* YouTube video here */}
@@ -26,6 +26,7 @@ export const Thumbnail = () => {
             <iframe
                 width="100%"
                 height="100%"
+                
                 src="https://www.youtube.com/embed/9vELvnN-9sU?si=V1gN3XNL6lqaLrYJ"
                 title="YouTube video player"
                 frameBorder="0"
