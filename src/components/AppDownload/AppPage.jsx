@@ -12,7 +12,7 @@ const AppPage = () => {
   });
 
   return (
-    <div className="download-app-page  ">
+    <div className="download-app-page px-2 md:px-0  ">
       <div className="circle-container ">
       <div className="green_c">
   <div className="circle-background"></div>
