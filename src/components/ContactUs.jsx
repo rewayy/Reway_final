@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const ContactUS = () => {
+  // Initialize EmailJS with your user ID
+  emailjs.init('1EkpRoro7rv3gkRQC');
+
   const form = useRef();
   const [formData, setFormData] = useState({
     from_name: '',
@@ -20,11 +23,12 @@ export const ContactUS = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log('Form Data:', formData);
+  
     emailjs
-      .sendForm('service_96hse6k', 'template_m0xzgmt', form.current, 'EanLXs4ab9oN505vC')
+      .sendForm('service_96hse6k', 'template_m0xzgmt', form.current, '1EkpRoro7rv3gkRQC')
       .then((result) => {
-        console.log(result.text);
+        console.log('EmailJS Result:', result);
         setSubmitted(true);
         // Clear the input fields after submission
         setFormData({
@@ -35,23 +39,29 @@ export const ContactUS = () => {
           state: 'Andaman and Nicobar Islands',
           message: '',
         });
+  
+        // Show success message or handle as needed
+        alert('Email sent successfully!');
       })
       .catch((error) => {
-        console.log(error.text);
+        console.log('EmailJS Error:', error);
+        
+        // Show error message or handle as needed
+        alert('Failed to send email. Please try again later.');
       });
   };
 
   return (
-    <div id='contact' className="text-center p-8 md:p-6  " >
+    <div id='contact' className="text-center p-8 md:p-6">
       <h1 className="text-4xl text-black p-4">CONTACT US</h1>
       <div className="border-b-2 border-teal-400 rounded-full mx-auto w-60 mt-2"></div>
       <p className="font-s text-center my-5 text-2xl font-thin">
         Send us the message and get all your queries answered
       </p>
 
-      <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg  " ref={form}>
-        <div className="flex flex-col items-center   md:py-12  md:bg-opacity-90   md:rounded-lg md:mx-[50vh] ">
-        <input
+      <form onSubmit={sendEmail} className="my-5 p-8 rounded-lg" ref={form}>
+        <div className="flex flex-col items-center md:py-12 md:bg-opacity-90 md:rounded-lg md:mx-[50vh]">
+          <input
             type="text"
             name="from_name"
             value={formData.from_name}
@@ -78,28 +88,28 @@ export const ContactUS = () => {
             className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
           />
 
-    <select
-      required
-      name="purpose"
-      value={formData.purpose}
-      onChange={handleInputChange}
-      className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white">
-        <option value="EPR Assistance">EPR Assistance</option>
+          <select
+            required
+            name="purpose"
+            value={formData.purpose}
+            onChange={handleInputChange}
+            className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
+          >
+             <option value="EPR Assistance">EPR Assistance</option>
         <option value="AI Chatbot Waitlist">AI Chatbot Waitlist</option>
         <option value="Sell E-Waste">Sell E-Waste</option>
         <option value="Buy E-Waste(only for govt authorized Recyclers)">Buy E-Waste(only for govt authorized Recyclers)</option>
         <option value="others">others</option>
-    </select>
+          </select>
 
-<select
-  required
-  name="state"
-  value={formData.state}
-  onChange={handleInputChange}
-  className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
->
-
-<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+          <select
+            required
+            name="state"
+            value={formData.state}
+            onChange={handleInputChange}
+            className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white"
+          >
+          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
 <option value="Andhra Pradesh">Andhra Pradesh</option>
 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
 <option value="Assam">Assam</option>
@@ -133,8 +143,7 @@ export const ContactUS = () => {
 <option value="Uttar Pradesh">Uttar Pradesh</option>
 <option value="Uttarakhand">Uttarakhand</option>
 <option value="West Bengal">West Bengal</option>
-</select>
-
+          </select>
 
           <textarea
             name="message"
@@ -144,7 +153,7 @@ export const ContactUS = () => {
             className="form__input p-2 w-full md:w-[550px] mx-auto mb-2 bg-[#3F704D] text-white h-[170px]"
           ></textarea>
 
-          <button type="submit" className="form__submit-btn  md:w-[550px] text-white p-2 bg-[#3F704D]">
+          <button type="submit" className="form__submit-btn md:w-[550px] text-white p-2 bg-[#3F704D]">
             Submit
           </button>
         </div>
@@ -154,4 +163,4 @@ export const ContactUS = () => {
     </div>
   );
 };
-    
+
