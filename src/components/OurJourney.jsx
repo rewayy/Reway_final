@@ -23,6 +23,12 @@ export const OurJourney = () => {
                         In a nation burdened by the mounting E-Waste crisis, a group of young and 
                         innovative tech visionaries embarked on a mission to revolutionise the eWaste landscape.
                     </p>
+                    <p className=' mx-2 md:mx-0 px-12 md:px-10 md:w-[510px] tracking-wide md:mt-4 md:leading-7 pt-4 md:py-4 md:pt-0 text-sm md:text-lg font-light '>
+                        With Reway we are bridging the gap between E-Waste Sellers including MNCs, Corporates, Startups and the E-Waste Recyclers.
+                    </p>
+                    <p className=' mx-2 md:mx-0 px-12 md:px-10 md:w-[510px] tracking-wide md:mt-4 md:leading-7 pt-4 md:py-4 md:pt-0 text-sm md:text-lg font-light '>
+                        Come join us in this journey and let's recycle for India!
+                    </p>
                 <div>
             </div>
         </div>
