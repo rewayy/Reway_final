@@ -13,7 +13,7 @@ const MarketPlace = () => {
 
           <div className='w-1/2 justify-center my-auto'>
             <h1 className='text-5xl md:text-5xl sm:text-4xl text-center text-green-800'>
-              Make Recycling Fun with Reway!
+              Reway B2B Marketplace for E-Waste: Where Sellers meet Recyclers! 
             </h1>
             <div className='flex justify-center my-12'>
               <Link
