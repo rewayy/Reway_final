@@ -90,7 +90,7 @@ export const Testimonial = () => {
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white max-w-sm w-full  overflow-hidden shadow-md drop-shadow-xl mx-4 h-[300px] flex-shrink-0 rounded p-3  md:p-6 my-8"
+              className="bg-white max-w-sm w-full  overflow-hidden shadow-md drop-shadow-xl sm:mx h-[300px] flex-shrink-0 rounded p-3 my-8 "
             >
               <div className="h-[125px]  m-2  ">
                 <p className="font-normal tracking-tight text-sm sm:text-lg italic px-2">{testimonial.review}</p>

@@ -16,8 +16,8 @@ import "react-vertical-timeline-component/style.min.css";
 function Timeline() {
 
   return (
-    <div id='timeline' className='py-8 font-mont font-normal flex flex-col justify-center items-center '>
-      <h1 className="timeline-title text-black flex flex-col  text-4xl ">Our Journey So Far<br/>
+    <div id='timeline' className='py-8  font-mont font-normal flex flex-col justify-center items-center '>
+      <h1 className="timeline-title text-black flex flex-col   md:text-4xl ">Our Journey So Far<br/>
         < span className='border-2 mt-1 border-green-300 rounded-full w-full' />
       
       </h1>
