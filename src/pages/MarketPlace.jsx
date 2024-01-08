@@ -13,8 +13,13 @@ const MarketPlace = () => {
 
           <div className='w-1/2 justify-center my-auto'>
             <h1 className='text-5xl md:text-5xl sm:text-4xl text-center text-green-800'>
-              Reway B2B Marketplace for E-Waste: Where Sellers meet Recyclers! 
+              REM
             </h1>
+            <h1 className='text-5xl md:text-5xl sm:text-4xl text-center text-green-800'>
+              Reway E-Marketplace
+            </h1>
+            <h2>B2B Marketplace for Electronic Waste and more!</h2>
+            <h3>Where Sellers meet Recyclers</h3>
             <div className='flex justify-center my-12'>
               <Link
                 to='/recyclers'  
