@@ -7,7 +7,7 @@ const Sellers = () => {
       <div className='max-w-[1183px] lg:m-auto mx-2 md:mx-4 py-8 rounded-md text-black flex justify-center'>
         <div className='w-full md:w-[500px] mx-auto px-4 py-6 rounded-md bg-white'>
           <div className='py-3'>
-            <h1 className='text-green-800 text-center text-2xl font-bold'>RECYCLER INFORMATION</h1>
+            <h1 className='text-green-800 text-center text-2xl font-bold'>SELLER INFORMATION</h1>
           </div>
 
           <form>
