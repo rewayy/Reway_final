@@ -43,7 +43,7 @@ const Chatbot = () => {
 
   return (
     <div
-      className={`max-w-[1183px] shadow-lg relative md:m-auto font-mont m-4 p-4 rounded-xl border h-full flex items-center justify-between ${
+      className={`max-w-[1183px]  min-w-[375px] shadow-lg relative md:m-auto font-mont m-4 p-4 rounded-xl border h-full flex items-center justify-between ${
         isDarkTheme ? 'bg-gray-900 text-white' : 'bg-gray-200 text-black'
       }`}
     >
