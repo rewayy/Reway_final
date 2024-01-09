@@ -57,7 +57,7 @@ const Navbar = () => {
                         ))}
                             <Link className='px-2 hover:underline underline-offset-8' to={'/services'}> Services  </Link>
                             <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
-                            <Link className='px-2 hover:underline underline-offset-8' to={'/chat'}> Chat  </Link>
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/chat'}> Chat Us  </Link>
                             <Link className='px-2 hover:underline underline-offset-8' to={'/'}> Contact  </Link>
                         </ul>
                     </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                         {nav?   
                                 <> 
                                     <div className='mr-6'>
-                                        <ImCross color='white' opacity={.9} className='absolute z-10 top-6'  />
+                                        <ImCross color='white' opacity={.9} className='absolute z-40 right-7 top-11'  />
                                     </div>
                                   
                                 </> 
@@ -77,7 +77,7 @@ const Navbar = () => {
                     </div>
 
                     {nav && ( 
-                            <div className='md:hidden border absolute transition-all ease-in-out duration-200 top-0 text-white left-0 w-full h-screen p-4   bg-gradient-to-b from-green-600 to-green-800 border-white'>
+                            <div className='md:hidden z-30 border absolute transition-all ease-in-out duration-200 top-0 text-white left-0 w-full h-screen p-4   bg-gradient-to-b from-green-600 to-green-800 border-white'>
                                 <Link className=' p-1  ml-1 absolute top-0 left-0' to={'/'}>
                                         <img  src={logo}  />
                                 </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                                     ))}
                                         <Link to={'/services'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Services</Link>
                                         <Link to={'/blogs'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</Link>
-                                        <Link to={'/chat'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Chat</Link>
+                                        <Link to={'/chat'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Chat Us</Link>
                                 </ul>
                           </div> 
                     )}
