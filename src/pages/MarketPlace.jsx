@@ -13,7 +13,7 @@ const MarketPlace = () => {
 
           <div className= 'flex flex-col w-full md:w-1/2 md:mr-4 p-2 items-center  justify-center my-auto'>
             <h1 className='text-2xl  -mt-12 md:mt-0 p-1 md:text-[2.9rem] leading-6 tracking-tight font-bold md:leading-[3.1vw] md:tracking-normal text-center text-green-800'>
-              REM <br /> <span> REWAY</span> <br /> <span>E-MARKETPLACE</span>
+              R.E.M <br /> <span> REWAY</span> <br /> <span>E-MARKETPLACE</span>
             </h1>
             <p className='text-center  text-gray-800  mt-5'>
               B2B Marketplace for Electronic Waste and more! <br className='hidden md:block' /> Where Sellers meets Recyclers.
