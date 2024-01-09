@@ -53,6 +53,9 @@ const Navbar = () => {
                                 <Link className='px-2 hover:underline underline-offset-8' to='/blogs' smooth>
                                     Blogs
                                 </Link>
+                                <Link className='px-2 hover:underline underline-offset-8' to='/chat' smooth>
+                                    Chat Us
+                                </Link>
                                 <li className='hover:underline underline-offset-8 cursor-pointer px-2' >
                                     <ScrollLink to='contact' smooth={true} duration={600}>
                                        Contact
@@ -92,6 +95,7 @@ const Navbar = () => {
                                 ))}
                                     <Link to={'/services'} className=' py-3 w-full '>Services</Link>
                                     <Link to={'/blogs'} className=' py-3 w-full '>Blogs</Link>
+                                    <Link to={'/chat'} className=' py-3 w-full '>Chat</Link>
                                 </ul>
                           </div> 
                     )}

@@ -25,6 +25,7 @@ import Recyclers from './components/MarketPlace/recyclers';
 import Sellers from './components/MarketPlace/sellers';
 import RecyclerForm from './components/MarketPlace/RecyclerForm';
 import { RecyclerProvider } from './components/MarketPlace/RecyclerContext';
+import Chatbot from './pages/Chatbot';
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
           <Route index element={<AllSection />} />
           <Route path="/" element={<Layout />}>
             <Route path="/blogs" element={<Blog/>} />
+            <Route path="/chat" element={<Chatbot/>} />
             <Route path="/services" element={<Services/>} />
             <Route path="/marketPlace" element={<MarketPlace/>} />
             <Route path="/One1" element={<One1 />} />

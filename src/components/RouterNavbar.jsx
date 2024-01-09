@@ -57,6 +57,7 @@ const Navbar = () => {
                         ))}
                             <Link className='px-2 hover:underline underline-offset-8' to={'/services'}> Services  </Link>
                             <Link className='px-2 hover:underline underline-offset-8' to={'/blogs'}> Blogs  </Link>
+                            <Link className='px-2 hover:underline underline-offset-8' to={'/chat'}> Chat  </Link>
                             <Link className='px-2 hover:underline underline-offset-8' to={'/'}> Contact  </Link>
                         </ul>
                     </div>
@@ -89,6 +90,7 @@ const Navbar = () => {
                                     ))}
                                         <Link to={'/services'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Services</Link>
                                         <Link to={'/blogs'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Blogs</Link>
+                                        <Link to={'/chat'} onClick={()=> setNav(!nav)} className=' py-3 w-full '>Chat</Link>
                                 </ul>
                           </div> 
                     )}
